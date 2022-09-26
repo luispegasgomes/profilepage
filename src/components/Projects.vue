@@ -13,7 +13,10 @@
         "
       >
         <!--PERSONALPAGE-->
-        <div v-for="(info, index) in getProjects[0].slice().reverse()" :key="index">
+        <div
+          v-for="(info, index) in getProjects[0].slice().reverse()"
+          :key="index"
+        >
           <h1 style="font-size: 30px" class="mt-4">
             {{ info.date }}
           </h1>
@@ -30,7 +33,7 @@
             <button
               class="btnShow mt-3"
               v-on:click="openProfilePage(info._id)"
-              v-scroll-to="'#butclose'"
+              v-scroll-to="'#projectInfo1'"
             >
               Show More
             </button>
@@ -40,21 +43,11 @@
         <!--PERSONALPAGE-->
       </div>
     </div>
-    <div
-      class="
-        col-sm-5
-        d-flex
-        flex-column
-        align-items-center
-        mt-3
-      "
-    >
-      <button class="closebtn" id="butclose" v-on:click="close()" v-if="projectinfo == true" >
-        <img src="../assets/close.png" width="30" height="30" />
-      </button>
+    <div class="col-sm-5 d-flex flex-column align-items-center mt-3">
+
       <transition name="fade">
         <div
-        id="projectInfo1"
+          id="projectInfo1"
           class="
             boxAutme
             col-11
@@ -64,86 +57,94 @@
             justify-content-center
             mt-2
           "
-          v-if="projectinfo == true"
         >
-          <div class="d-flex">
-            <img :src="getOneProject[0].logo" width="50" height="50" />
-            <h1 class="mx-4 fontBarlow colorDarkBlue">{{getOneProject[0].name}}</h1>
-          </div>
           <p
+            v-if="projectinfo == false"
+            class="col-10"
             style="text-align: center"
-            class="mt-3 col-12 fontBarlow colorDarkBlue"
           >
-            {{getOneProject[0].description}}
+            To find out more about the projects I've developed, click on "Show
+            More" on the project you want to know more about.
+            <br><br><br><br>
+            <span style="font-size:35px; font-weight:bold" class="fontAsap">Luís Gomes</span> 
           </p>
-          <p class="colorOrange mt-2" style="font-weight: bold">
-            Main tools used
-          </p>
-          <div class="d-flex mt-3">
-            <img
-              class="mx-3"
-              :src="getOneProject[0].tools[0]"
-              width="40"
-              height="40"
-            />
-            <img
-              class="mx-3"
-              :src="getOneProject[0].tools[1]"
-              width="40"
-              height="40"
-            />
-            <img
-              class="mx-3"
-              :src="getOneProject[0].tools[2]"
-              width="40"
-              height="40"
-            />
-            <img
-              class="mx-2"
-              :src="getOneProject[0].tools[3]"
-              width="40"
-              height="40"
-            />
-          </div>
-          <div class="d-flex mt-4">
-            <a class="mx-2 colorDarkBlue"  v-b-modal.modal-1>See sample</a>
-            <a
-              class="mx-2 colorDarkBlue"
-              :href="getOneProject[0].website"
+          <div
+            v-if="projectinfo == true"
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="d-flex">
+              <img :src="getOneProject[0].logo" width="50" height="50" />
+              <h1 class="mx-4 fontBarlow colorDarkBlue">
+                {{ getOneProject[0].name }}
+              </h1>
+            </div>
+            <p
+              style="text-align: center"
+              class="mt-3 col-12 fontBarlow colorDarkBlue"
             >
-              Go to Website</a
-            >
+              {{ getOneProject[0].description }}
+            </p>
+            <p class="colorOrange mt-2" style="font-weight: bold">
+              Main tools used
+            </p>
+            <div class="d-flex mt-3">
+              <img
+                class="mx-3"
+                :src="getOneProject[0].tools[0]"
+                width="40"
+                height="40"
+              />
+              <img
+                class="mx-3"
+                :src="getOneProject[0].tools[1]"
+                width="40"
+                height="40"
+              />
+              <img
+                class="mx-3"
+                :src="getOneProject[0].tools[2]"
+                width="40"
+                height="40"
+              />
+              <img
+                class="mx-2"
+                :src="getOneProject[0].tools[3]"
+                width="40"
+                height="40"
+              />
+            </div>
+            <div class="d-flex mt-4">
+              <a class="mx-2 colorDarkBlue" v-b-modal.modal-1>See sample</a>
+              <a class="mx-2 colorDarkBlue" :href="getOneProject[0].website">
+                Go to Website</a
+              >
+            </div>
           </div>
         </div>
       </transition>
       <b-modal
-          id="modal-1"
-          title="Conta-nos o teu dia!"
-          ok-title="Confirmar"
-          hide-header
-          hide-footer
-        >
-          <div class="d-flex flex-column">
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="fontBarlow" style="font-size: 30px">
-                <img src="pages/rm.png" >
-              </div>
-              <button
-                v-on:click="closeModal()"
-                class="fontNunito closebtn mt-2"
-              >
-                fechar
-              </button>
+        id="modal-1"
+        title="Conta-nos o teu dia!"
+        ok-title="Confirmar"
+        hide-header
+        hide-footer
+      >
+        <div class="d-flex flex-column">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="fontBarlow" style="font-size: 30px">
+              <img src="pages/rm.png" />
             </div>
+            <button v-on:click="closeModal()" class="fontNunito closebtn mt-2">
+              fechar
+            </button>
           </div>
-        </b-modal>
-
+        </div>
+      </b-modal>
     </div>
   </div>
 </template>
 
 <script>
-
 import { mapGetters, mapActions } from "vuex";
 
 export default {
@@ -162,14 +163,12 @@ export default {
     ...mapGetters(["getProjects", "getOneProject"]),
   },
 
-
   methods: {
     ...mapActions(["loadProjects", "loadOneProject"]),
 
     openProfilePage(index) {
       this.loadOneProject(index);
       this.projectinfo = true;
-
     },
     close() {
       window.scrollTo(0, 500);

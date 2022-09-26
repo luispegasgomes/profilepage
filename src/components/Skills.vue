@@ -100,7 +100,7 @@
           class="fontBarlow mx-3"
           style="font-size: 15px; font-weight: bold; text-align: center"
         >
-          Project management and UI/UX
+          Project management | UI/UX | Web testing and performance
         </p>
       </div>
       <div class="row d-flex align-items-center justify-content-center mb-3">
@@ -119,7 +119,8 @@
         <div
           class="col-sm-4 d-flex align-items-center justify-content-center mt-3"
         >
-
+          <img class="col-4 mx-3" src="../assets/icons/selenium.png" />
+          <img class="col-4 mx-3" src="../assets/icons/jest.jpg" />
         </div>
       </div>
     </div>

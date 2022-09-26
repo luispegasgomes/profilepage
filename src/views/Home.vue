@@ -14,21 +14,21 @@
         />mes
       </h1>
       <p
-        class="fontBarlow colorDarkBlue mt-2"
+        class="fontBarlow colorDarkBlue mt-4"
         style="text-align: center; font-size: 20px"
       >
         Web Developer <br />
-        Santa Marinha do Zêzere, Baião
+        Porto, Portugal
       </p>
       <img
         src="../assets/luis2.png"
-        class=""
+        class="mt-3x"
         alt="Luis"
         width="240"
         height="240"
       />
 
-      <div class="d-flex mt-4">
+      <div class="d-flex mt-5">
         <a href="https://github.com/luispegasgomes">
           <button class="mx-3 bgBeige btnBeige">
             <img src="../assets/github.png" width="30" />
@@ -50,7 +50,7 @@
         </a>
       </div>
 
-      <hr class="col-8 mt-4 bgBlack" style="height: 3px" />
+      <hr class="col-8 mt-5 bgBlack" style="height: 3px" />
 
       <!--BUTTONS-->
       <div class="row align-items-center justify-content-center mt-3">
@@ -407,7 +407,6 @@ export default {
 <style scoped>
 .home {
   position: relative;
-  height: 100vh;
   background-image: url("../assets/ponte.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
