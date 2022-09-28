@@ -7,7 +7,10 @@ import Home from "../views/Home.vue";
 
 import Login from "../views/Login.vue";
 
+import Landing from "../views/Landing.vue";
+
 import Error from "../views/Error.vue";
+
 
 function isAuthenticated() {
   return store.getters.getIsAuthenticated;
@@ -43,6 +46,15 @@ const routes = [
     meta: {
       requiresAuth: false,
       title: "Erro",
+    },
+  },
+  {
+    path: "/landing",
+    name: "Landing",
+    component: Landing,
+    meta: {
+      requiresAuth: false,
+      title: "Landing",
     },
   },
 ];
