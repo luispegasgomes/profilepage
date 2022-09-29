@@ -26,7 +26,7 @@
         v-model="txtUsername"
       />
       <input
-        type="text"
+        type="password"
         class="mt-3 form-control"
         name="txtPassword"
         id="txtPassword"
