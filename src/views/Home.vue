@@ -20,13 +20,14 @@
         Web Developer <br />
         Porto, Portugal
       </p>
-      <img
+      <router-link :to="{ name: 'Login' }">      <img
         src="../assets/luis2.png"
         class="mt-3x"
         alt="Luis"
         width="240"
         height="240"
-      />
+      /></router-link>
+
 
       <div class="d-flex mt-5">
         <a href="https://github.com/luispegasgomes">

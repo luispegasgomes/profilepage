@@ -15,7 +15,7 @@
       </button>
     </div>
     <div v-if="horario">
-      <img src="../assets/Horário.png" width="400px" class="mt-2" />
+      <img src="../assets/Horário.png" width="350px" class="mt-2" />
     </div>
     <div v-if="tasks" class="d-flex flex-column align-items-center">
       <h2 class="mt-2 fontBarlow">As minhas tarefas</h2>
