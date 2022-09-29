@@ -114,7 +114,7 @@
               />
             </div>
             <div class="d-flex mt-4">
-              <a class="mx-2 colorDarkBlue" v-b-modal.modal-1>See sample</a>
+              <a class="mx-2 colorDarkBlue" v-b-modal.modal-1 v-on:click="sample()">See sample</a>
               <a class="mx-2 colorDarkBlue" :href="getOneProject[0].website">
                 Go to Website</a
               >
@@ -129,16 +129,17 @@
         hide-header
         hide-footer
       >
-        <div class="d-flex flex-column">
-          <div class="d-flex align-items-center justify-content-between">
+
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <h1 class="mb-4 fontAsap colorDarkBlue" style="font-size:30px">{{projectTitle}}</h1>
             <div class="fontBarlow" style="font-size: 30px">
-              <img src="pages/rm.png" />
+              <img :src="imgmodal" width="400px"/>
             </div>
-            <button v-on:click="closeModal()" class="fontNunito closebtn mt-2">
-              fechar
+            <button v-on:click="closeModal()" class="fontNunito closebtn mt-3">
+              <img src="../assets/close.png" width="35px">
             </button>
           </div>
-        </div>
+
       </b-modal>
     </div>
   </div>
@@ -156,6 +157,8 @@ export default {
   data() {
     return {
       projectinfo: false,
+      imgmodal: 'empty',
+      projectTitle: 'empty'
     };
   },
 
@@ -169,13 +172,15 @@ export default {
     openProfilePage(index) {
       this.loadOneProject(index);
       this.projectinfo = true;
+      
     },
-    close() {
-      window.scrollTo(0, 500);
-      if (this.projectinfo) {
-        setTimeout(() => (this.projectinfo = false), 80);
-      }
+    closeModal() {
+      this.$bvModal.hide("modal-1");
     },
+    sample(){
+      this.imgmodal = this.getOneProject[0].promo
+      this.projectTitle = this.getOneProject[0].name
+    }
   },
 };
 </script>
