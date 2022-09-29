@@ -136,7 +136,7 @@
               <img :src="imgmodal" width="300px"/>
             </div>
             <button v-on:click="closeModal()" class="fontNunito closebtn mt-3">
-              <img src="../assets/close.png" width="35px">
+              Close
             </button>
           </div>
 
@@ -203,10 +203,11 @@ export default {
 
 .closebtn {
   border: none;
-  border-radius: 30px;
-  background-color: white;
-  width: 30px;
+  border-radius: 5px;
+  background-color: #b20000;
   height: 30px;
+  width: 60px;
+  color: white;
 }
 
 .fade-enter-active,
