@@ -133,7 +133,7 @@
           <div class="d-flex flex-column align-items-center justify-content-between">
             <h1 class="mb-4 fontAsap colorDarkBlue" style="font-size:30px">{{projectTitle}}</h1>
             <div class="fontBarlow" style="font-size: 30px">
-              <img :src="imgmodal" width="400px"/>
+              <img :src="imgmodal" width="300px"/>
             </div>
             <button v-on:click="closeModal()" class="fontNunito closebtn mt-3">
               <img src="../assets/close.png" width="35px">
