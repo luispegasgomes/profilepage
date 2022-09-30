@@ -35,7 +35,7 @@
             <img src="../assets/github.png" width="30" />
           </button>
         </a>
-        <a href="mailto:luispegasgomes@gmial.com">
+        <a href="mailto:luispegasgomes@gmail.com">
           <button
             class="mx-3 bgDarkBlue btnBeige fontBarlow hireme"
             style="width: 150px"
