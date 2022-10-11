@@ -9,6 +9,7 @@
         <span style="color: #faf9f6">I'm</span>
         Luís G<img
           class="rotateRim"
+          src="../assets/wheel.png"
           width="32px"
         />mes
       </h1>
@@ -19,14 +20,13 @@
         Web Developer <br />
         Porto, Portugal
       </p>
-      <router-link :to="{ name: 'Login' }">      <img
+      <img
         src="../assets/luis2.png"
         class="mt-3x"
         alt="Luis"
         width="240"
         height="240"
-      /></router-link>
-
+      />
 
       <div class="d-flex mt-5">
         <a href="https://github.com/luispegasgomes">
@@ -246,21 +246,18 @@
             flex-column
             align-items-start
           "
-          v-for="(info, index) in getAcademics[0].slice().reverse()" :key="index"
+          v-for="(info, index) in getAcademics[0].slice().reverse()"
+          :key="index"
         >
-          <h1 style="font-size: 30px">{{info.date}}</h1>
+          <h1 style="font-size: 30px">{{ info.date }}</h1>
           <hr class="col-5 mt-0 mb-1" style="height: 2px" />
           <div class="d-flex align-items-center mx-3">
             <img :src="info.logo" width="50" height="50" />
             <p class="mt-3 mx-3">
-              <span style="font-weight: bold">
-                {{info.title}} <br />
-              </span>
-              {{info.subtitle}}
+              <span style="font-weight: bold"> {{ info.title }} <br /> </span>
+              {{ info.subtitle }}
             </p>
           </div>
-
-
         </div>
       </b-card>
     </div>
@@ -501,44 +498,44 @@ export default {
 
 @keyframes wiggle {
   2% {
-    -webkit-transform: translateY(-3px) ;
-    transform: translateY(-3px) ;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   4% {
-    -webkit-transform: translateY(3px) ;
-    transform: translateY(3px) ;
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
   }
   6% {
-    -webkit-transform: translateY(-3px) ;
-    transform: translateY(-3px) ;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   8% {
-    -webkit-transform: translateY(3px) ;
-    transform: translateY(3px) ;
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
   }
   10% {
-    -webkit-transform: translateY(-2px) ;
-    transform: translateY(-2px) ;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
   12% {
     -webkit-transform: translateY(2px);
-    transform: translateY(2px) ;
+    transform: translateY(2px);
   }
   14% {
-    -webkit-transform: translateY(-2px) ;
-    transform: translateY(-2px) ;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
   }
   16% {
-    -webkit-transform: translateY(2px) ;
-    transform: translateY(2px) ;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
   }
   18% {
-    -webkit-transform: translateY(-1px) ;
-    transform: translateY(-1px) ;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
   }
   20% {
-    -webkit-transform: translateY(1px) ;
-    transform: translateY(1px) ;
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
   }
 }
 
