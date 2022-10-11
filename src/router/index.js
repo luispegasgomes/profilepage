@@ -5,9 +5,6 @@ import store from "../store";
 
 import Home from "../views/Home.vue";
 
-
-import Landing from "../views/Landing.vue";
-
 import Error from "../views/Error.vue";
 
 
@@ -39,15 +36,7 @@ const routes = [
       title: "Erro",
     },
   },
-  {
-    path: "/landing",
-    name: "Landing",
-    component: Landing,
-    meta: {
-      requiresAuth: false,
-      title: "Landing",
-    },
-  },
+
 ];
 
 const router = new VueRouter({
