@@ -9,7 +9,6 @@
         <span style="color: #faf9f6">I'm</span>
         Luís G<img
           class="rotateRim"
-          src="../assets/wheel.png"
           width="32px"
         />mes
       </h1>

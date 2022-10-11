@@ -5,7 +5,6 @@ import store from "../store";
 
 import Home from "../views/Home.vue";
 
-import Login from "../views/Login.vue";
 
 import Landing from "../views/Landing.vue";
 
@@ -29,15 +28,7 @@ const routes = [
     },
   },
 
-  {
-    path: "/login",
-    name: "Login",
-    component: Login,
-    meta: {
-      requiresAuth: false,
-      title: "Luís Gomes",
-    },
-  },
+
 
   {
     path: "*",
