@@ -408,7 +408,7 @@ export default {
 <style scoped>
 .home {
   position: relative;
-  background-image: url("../assets/ponte.png");
+  
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
