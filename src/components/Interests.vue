@@ -111,12 +111,10 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   name: "Interests",
-  created() {
-    this.loadHobbies("");
-  },
+
   data() {
     return {
       showCar: true,
@@ -127,7 +125,6 @@ export default {
     ...mapGetters(["getHobbies"]),
   },
   methods: {
-     ...mapActions(["loadHobbies"]),
     showCarFunc() {
       this.showFootball = false;
       this.showCar = true;

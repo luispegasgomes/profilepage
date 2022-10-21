@@ -32,7 +32,7 @@
 
             <button
               class="btnShow mt-3"
-              v-on:click="openProfilePage(info.title)"
+              v-on:click="openProfilePage(info.name)"
               v-scroll-to="'#projectInfo1'"
             >
               Show More
@@ -73,16 +73,16 @@
             class="d-flex flex-column align-items-center justify-content-center"
           >
             <div class="d-flex">
-              <img :src="getOneProject.logo" width="50" height="50" />
+              <img :src="object.logo" width="50" height="50" />
               <h1 class="mx-4 fontBarlow colorDarkBlue">
-                {{ getOneProject.name }}
+                {{ object.name }}
               </h1>
             </div>
             <p
               style="text-align: center"
               class="mt-3 col-12 fontBarlow colorDarkBlue"
             >
-              {{ getOneProject.description }}
+              {{ object.description }}
             </p>
             <p class="colorOrange mt-2" style="font-weight: bold">
               Main tools used
@@ -90,32 +90,32 @@
             <div class="d-flex mt-3">
               <img
                 class="mx-3"
-                :src="getOneProject.tools[0]"
+                :src="object.tools[0]"
                 width="40"
                 height="40"
               />
               <img
                 class="mx-3"
-                :src="getOneProject.tools[1]"
+                :src="object.tools[1]"
                 width="40"
                 height="40"
               />
               <img
                 class="mx-3"
-                :src="getOneProject.tools[2]"
+                :src="object.tools[2]"
                 width="40"
                 height="40"
               />
               <img
                 class="mx-2"
-                :src="getOneProject.tools[3]"
+                :src="object.tools[3]"
                 width="40"
                 height="40"
               />
             </div>
             <div class="d-flex mt-4">
               <a class="mx-2 colorDarkBlue" v-b-modal.modal-1 v-on:click="sample()">See sample</a>
-              <a class="mx-2 colorDarkBlue" :href="getOneProject.website">
+              <a class="mx-2 colorDarkBlue" :href="object.website">
                 Go to Website</a
               >
             </div>
@@ -146,19 +146,16 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 
 export default {
   name: "Projects",
-  created() {
-    this.loadProjects("");
-  },
-
   data() {
     return {
       projectinfo: false,
       imgmodal: 'empty',
-      projectTitle: 'empty'
+      projectTitle: 'empty',
+      object:{},
     };
   },
 
@@ -167,10 +164,9 @@ export default {
   },
 
   methods: {
-    ...mapActions(["loadProjects", "loadOneProject"]),
-
     openProfilePage(index) {
-      this.loadOneProject(index);
+      this.object = this.getOneProject(index)
+      console.log(this.object);
       this.projectinfo = true;
       
     },
@@ -178,8 +174,8 @@ export default {
       this.$bvModal.hide("modal-1");
     },
     sample(){
-      this.imgmodal = this.getOneProject.promo
-      this.projectTitle = this.getOneProject.name
+      this.imgmodal = this.object.promo
+      this.projectTitle = this.object.name
     }
   },
 };

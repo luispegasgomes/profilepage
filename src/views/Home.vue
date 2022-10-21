@@ -329,7 +329,7 @@ import Projects from "../components/Projects.vue";
 import Skills from "../components/Skills.vue";
 import Certificate from "../components/Certificate.vue";
 import Interests from "../components/Interests.vue";
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   name: "Home",
   data() {
@@ -354,7 +354,6 @@ export default {
     Interests,
   },
   methods: {
-    ...mapActions(["loadAcademics"]),
     openAbout() {
       this.aboutme = true;
     },

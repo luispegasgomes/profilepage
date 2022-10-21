@@ -99,7 +99,8 @@ export default {
     getHobbies: (state) => state.hobbies1,
     getProjects: (state) => state.projects1,
     getAcademics: (state) => state.academics1,
-    getOneProject: (state) => state.oneProject,
+    getOneProject: (state) => (name1) =>
+    state.projects1.find((c) => c.name === name1),
     getProgramming: (state) => state.programming1,
     getExtra: (state) => state.extra1,
   },

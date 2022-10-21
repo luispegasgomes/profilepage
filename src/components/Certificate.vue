@@ -75,13 +75,10 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 export default {
   name: "Certificate",
-  created() {
-    this.loadProgrammingCertificates("");
-    this.loadExtraCertificates("");
-  },
+
   data() {
     return {};
   },
@@ -89,7 +86,6 @@ export default {
     ...mapGetters(["getProgramming", "getExtra"]),
   },
   methods: {
-    ...mapActions(["loadProgrammingCertificates", "loadExtraCertificates"]),
     closeModal() {
       this.$bvModal.hide("modal-2");
     },
