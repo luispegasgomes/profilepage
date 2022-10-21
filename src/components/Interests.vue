@@ -41,7 +41,7 @@
             "
           ></div>
           <!--CAR POST-->
-          <div class="postBox mt-2 mx-3" v-for="(info, index) in getHobbies[0].slice().reverse()" :key="index">
+          <div class="postBox mt-2 mx-3" v-for="(info, index) in getHobbies.slice().reverse()" :key="index">
             <p style="text-align: start" class="mx-3 mt-2 fontBarlow">
               {{info.title}}
             </p>

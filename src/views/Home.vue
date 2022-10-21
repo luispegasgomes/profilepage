@@ -246,7 +246,7 @@
             flex-column
             align-items-start
           "
-          v-for="(info, index) in getAcademics[0].slice().reverse()"
+          v-for="(info, index) in getAcademics.slice().reverse()"
           :key="index"
         >
           <h1 style="font-size: 30px">{{ info.date }}</h1>
@@ -332,9 +332,6 @@ import Interests from "../components/Interests.vue";
 import { mapGetters, mapActions } from "vuex";
 export default {
   name: "Home",
-  created() {
-    this.loadAcademics("");
-  },
   data() {
     return {
       aboutme: false,

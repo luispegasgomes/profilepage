@@ -14,7 +14,7 @@
       >
         <!--PERSONALPAGE-->
         <div
-          v-for="(info, index) in getProjects[0].slice().reverse()"
+          v-for="(info, index) in getProjects.slice().reverse()"
           :key="index"
         >
           <h1 style="font-size: 30px" class="mt-4">
@@ -32,7 +32,7 @@
 
             <button
               class="btnShow mt-3"
-              v-on:click="openProfilePage(info._id)"
+              v-on:click="openProfilePage(info.title)"
               v-scroll-to="'#projectInfo1'"
             >
               Show More
@@ -73,16 +73,16 @@
             class="d-flex flex-column align-items-center justify-content-center"
           >
             <div class="d-flex">
-              <img :src="getOneProject[0].logo" width="50" height="50" />
+              <img :src="getOneProject.logo" width="50" height="50" />
               <h1 class="mx-4 fontBarlow colorDarkBlue">
-                {{ getOneProject[0].name }}
+                {{ getOneProject.name }}
               </h1>
             </div>
             <p
               style="text-align: center"
               class="mt-3 col-12 fontBarlow colorDarkBlue"
             >
-              {{ getOneProject[0].description }}
+              {{ getOneProject.description }}
             </p>
             <p class="colorOrange mt-2" style="font-weight: bold">
               Main tools used
@@ -90,32 +90,32 @@
             <div class="d-flex mt-3">
               <img
                 class="mx-3"
-                :src="getOneProject[0].tools[0]"
+                :src="getOneProject.tools[0]"
                 width="40"
                 height="40"
               />
               <img
                 class="mx-3"
-                :src="getOneProject[0].tools[1]"
+                :src="getOneProject.tools[1]"
                 width="40"
                 height="40"
               />
               <img
                 class="mx-3"
-                :src="getOneProject[0].tools[2]"
+                :src="getOneProject.tools[2]"
                 width="40"
                 height="40"
               />
               <img
                 class="mx-2"
-                :src="getOneProject[0].tools[3]"
+                :src="getOneProject.tools[3]"
                 width="40"
                 height="40"
               />
             </div>
             <div class="d-flex mt-4">
               <a class="mx-2 colorDarkBlue" v-b-modal.modal-1 v-on:click="sample()">See sample</a>
-              <a class="mx-2 colorDarkBlue" :href="getOneProject[0].website">
+              <a class="mx-2 colorDarkBlue" :href="getOneProject.website">
                 Go to Website</a
               >
             </div>
@@ -178,8 +178,8 @@ export default {
       this.$bvModal.hide("modal-1");
     },
     sample(){
-      this.imgmodal = this.getOneProject[0].promo
-      this.projectTitle = this.getOneProject[0].name
+      this.imgmodal = this.getOneProject.promo
+      this.projectTitle = this.getOneProject.name
     }
   },
 };
