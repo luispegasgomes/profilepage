@@ -227,7 +227,7 @@
             v-on:click="close()"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2">Back to top!</span>
+            <span class="mt-2 colorDarkBlue">Back to top!</span>
           </button>
         </div>
       </b-card>
@@ -273,7 +273,7 @@
             v-on:click="close()"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2">Back to top!</span>
+            <span class="mt-2 colorDarkBlue">Back to top!</span>
           </button>
         </div>
       </b-card>
@@ -297,7 +297,7 @@
             v-on:click="close()"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2">Back to top!</span>
+            <span class="mt-2 colorDarkBlue">Back to top!</span>
           </button>
         </div>
       </b-card>
@@ -320,7 +320,7 @@
             v-on:click="close()"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2">Back to top!</span>
+            <span class="mt-2 colorDarkBlue">Back to top!</span>
           </button>
         </div>
       </b-card>
@@ -344,7 +344,7 @@
             v-on:click="close()"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2">Back to top!</span>
+            <span class="mt-2 colorDarkBlue">Back to top!</span>
           </button>
         </div>
       </b-card>
@@ -368,7 +368,7 @@
             v-on:click="close()"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2">Back to top!</span>
+            <span class="mt-2 colorDarkBlue">Back to top!</span>
           </button>
         </div>
       </b-card>
