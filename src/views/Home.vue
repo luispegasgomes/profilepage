@@ -221,6 +221,14 @@
           <p class="text mt-3">Santa Marinha do Zêzere, Baião</p>
           <img src="../assets/birth.png" width="50px" class="mt-5" />
           <p class="text mt-3">September 15, 2002</p>
+
+          <button
+            class="d-flex flex-column align-items-center backtotop mt-3"
+            v-on:click="close()"
+          >
+            <img width="40" src="../assets/up.png" alt="Back to top!" />
+            <span class="mt-2">Back to top!</span>
+          </button>
         </div>
       </b-card>
     </div>
@@ -259,6 +267,15 @@
             </p>
           </div>
         </div>
+        <div class="d-flex flex-column align-items-center">
+          <button
+            class="d-flex flex-column align-items-center backtotop mt-3"
+            v-on:click="close()"
+          >
+            <img width="40" src="../assets/up.png" alt="Back to top!" />
+            <span class="mt-2">Back to top!</span>
+          </button>
+        </div>
       </b-card>
     </div>
     <!--UNIVERSITY-->
@@ -274,6 +291,15 @@
         </div>
         <!--Import projects component to show your content-->
         <Projects />
+        <div class="d-flex flex-column align-items-center">
+          <button
+            class="d-flex flex-column align-items-center backtotop mt-3"
+            v-on:click="close()"
+          >
+            <img width="40" src="../assets/up.png" alt="Back to top!" />
+            <span class="mt-2">Back to top!</span>
+          </button>
+        </div>
       </b-card>
     </div>
     <!--PROJECTS-->
@@ -288,6 +314,15 @@
         </div>
         <!--Import skills component to show your content-->
         <Skills />
+        <div class="d-flex flex-column align-items-center">
+          <button
+            class="d-flex flex-column align-items-center backtotop mt-3"
+            v-on:click="close()"
+          >
+            <img width="40" src="../assets/up.png" alt="Back to top!" />
+            <span class="mt-2">Back to top!</span>
+          </button>
+        </div>
       </b-card>
     </div>
     <!--SKILLS-->
@@ -303,6 +338,15 @@
         </div>
         <!--Import certificate component to show your content-->
         <Certificate />
+        <div class="d-flex flex-column align-items-center">
+          <button
+            class="d-flex flex-column align-items-center backtotop mt-3"
+            v-on:click="close()"
+          >
+            <img width="40" src="../assets/up.png" alt="Back to top!" />
+            <span class="mt-2">Back to top!</span>
+          </button>
+        </div>
       </b-card>
     </div>
     <!--CERTIFICATE-->
@@ -318,6 +362,15 @@
         </div>
         <!--Import interests component to show your content-->
         <Interests />
+        <div class="d-flex flex-column align-items-center">
+          <button
+            class="d-flex flex-column align-items-center backtotop mt-3"
+            v-on:click="close()"
+          >
+            <img width="40" src="../assets/up.png" alt="Back to top!" />
+            <span class="mt-2">Back to top!</span>
+          </button>
+        </div>
       </b-card>
     </div>
     <!--INTERESTS-->
@@ -542,5 +595,12 @@ export default {
 .hireme:hover {
   animation: none;
   background-color: #dbc7be;
+}
+
+.backtotop {
+  border: none;
+  border-radius: 11px;
+  background-color: #dbc7be;
+  animation: wiggle 1.2s infinite;
 }
 </style>
