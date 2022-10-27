@@ -2,9 +2,13 @@ export default {
   state: {
     hobbies: [],
     hobbies1: [
+      {date: "20/04/2019", img:"car/ge.jpg", title:"Memories..."},
+      {date: "23/05/2020", img:"car/santafe.jpg", title:"Misses!"},
       {date: "14/07/2021", img:"car/driving.jpeg", title:"Just driving"},
       {date: "08/07/2022", img:"car/piscas.png", title:"New blinkers!"},
-      {date: "31/08/2022", img:"car/rim.jpeg", title:"Rim cleaning..."}
+      {date: "31/08/2022", img:"car/rim.jpeg", title:"Rim cleaning..."},
+      {date: "08/10/2022", img:"car/October 8.jpeg", title:"Tire shining"},
+      
     ],
     projects: [],
     projects1: [
@@ -72,7 +76,7 @@ export default {
         subtitle: "Personal Project", 
         title: "Luís Gomes - Personal Information Page",
         tools: ["icons/vue.png", "icons/mongo.png", "icons/restapi.png", "icons/figma.png"],
-        website: "https://luisgomes.vercel.app/"
+        website: "https://luispegasgomes.pt/"
       },
 
     ],
