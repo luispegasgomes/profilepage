@@ -51,7 +51,6 @@
                 <img :src="info.logo" width="20" height="20" >
                 <p class="px-2">{{info.title}}</p>
               </div>
-              
               <b-progress :value="info.porcentage" variant="primary" :striped="striped" class="mt-2"></b-progress>
             </div>
           </div>

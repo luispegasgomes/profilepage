@@ -78,6 +78,17 @@ export default {
         tools: ["icons/vue.png", "icons/mongo.png", "icons/restapi.png", "icons/figma.png"],
         website: "https://luispegasgomes.pt/"
       },
+      {
+        date: "11/2022 - 12/2022", 
+        description: "This is a website that I developed as part of the TW | TSIW | ESMAD, which I decided to repeat to improve the grade, is an e-commerce store that sells sports parts for the BMW brand.", 
+        logo: "bmw m.png", 
+        name: "M Performance Parts",
+        promo: "pages/bmw m.jpg",
+        subtitle: "Personal Project | TW | TSIW", 
+        title: "BMW M Performance Parts",
+        tools: ["icons/html.png", "icons/css.png", "icons/js.png", "icons/vscode.png"],
+        website: "https://m-performance-parts.vercel.app/"
+      },
 
     ],
     academics:[],
