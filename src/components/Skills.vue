@@ -16,7 +16,7 @@
                 <p class="px-2">{{info.title}}</p>
               </div>
               
-              <b-progress :value="info.porcentage" variant="primary" :striped="striped"></b-progress>
+              <b-progress :value="info.porcentage" variant="primary" :striped="striped" class="mt-2"></b-progress>
             </div>
           </div>
       </div>
@@ -34,7 +34,7 @@
                 <p class="px-2">{{info.title}}</p>
               </div>
               
-              <b-progress :value="info.porcentage" variant="primary" :striped="striped"></b-progress>
+              <b-progress :value="info.porcentage" variant="primary" :striped="striped" class="mt-2"></b-progress>
             </div>
           </div>
       </div>
@@ -52,7 +52,7 @@
                 <p class="px-2">{{info.title}}</p>
               </div>
               
-              <b-progress :value="info.porcentage" variant="primary" :striped="striped"></b-progress>
+              <b-progress :value="info.porcentage" variant="primary" :striped="striped" class="mt-2"></b-progress>
             </div>
           </div>
       </div>
