@@ -70,7 +70,7 @@
                 v-scroll-to="'#collapse2'"
                 class="mx-4 mainBtns"
               >
-                <img src="../assets/home.png" width="30" height="30" />
+                <img src="../assets/account.png" width="36" height="36" />
               </button>
 
               <p class="colorDarkBlue fontAsap">About Me</p>
