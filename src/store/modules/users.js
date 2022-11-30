@@ -113,12 +113,12 @@ export default {
       {title: "GraphQL", porcentage: 30, logo: "/icons/graph.png"},
     ],
     others: [
-      {title: "Git Hub", porcentage: 65, logo: "/icons/gh.png"},
-      {title: "Selenium | JEST", porcentage: 30, logo: "/icons/selenium.png"},
-      {title: "Adobe XD", porcentage: 85, logo: "/icons/xd.png"},
-      {title: "Figma", porcentage: 85, logo: "/icons/figma.png"},
-      {title: "Agile", porcentage: 85, logo: "/icons/agile.png"},
-      {title: "Trello", porcentage: 30, logo: "/icons/trello.png"},
+      {title: "Git Hub", porcentage: 90, logo: "/icons/gh.png"},
+      {title: "Selenium | JEST", porcentage: 80, logo: "/icons/selenium.png"},
+      {title: "Adobe XD", porcentage: 80, logo: "/icons/xd.png"},
+      {title: "Figma", porcentage: 90, logo: "/icons/figma.png"},
+      {title: "Agile", porcentage: 75, logo: "/icons/agile.png"},
+      {title: "Trello", porcentage: 75, logo: "/icons/trello.png"},
     ]
   },
 
