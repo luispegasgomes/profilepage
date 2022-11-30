@@ -35,6 +35,9 @@ Vue.use(CardPlugin)
 // SIDEBAR
 import { SidebarPlugin } from 'bootstrap-vue'
 Vue.use(SidebarPlugin)
+// PROGRESS
+import { ProgressPlugin } from 'bootstrap-vue'
+Vue.use(ProgressPlugin)
 
 Vue.config.productionTip = false;
 

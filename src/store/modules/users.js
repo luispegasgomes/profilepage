@@ -97,6 +97,29 @@ export default {
       {date: "08/2022", download: "ola.pdf", logo: "certificates/campus.png", see: "ole.png", subtitle: "Graphical presentation utility", title: "Campus Digital"},
       {date: "10/2021", download: "ola.pdf", logo: "certificates/nucleo.png", see: "ole.png", subtitle: "English Course B2.2", title: "Formação, Consultoria e Línguas"},
     ],
+    skillsFE: [
+      {title: "HTML", porcentage: 95, logo: "/icons/html.png"},
+      {title: "CSS", porcentage: 75, logo: "/icons/css.png"},
+      {title: "JS", porcentage: 90, logo: "/icons/js.png"},
+      {title: "VueJS", porcentage: 95, logo: "/icons/vue.png"},
+      {title: "ReactJS", porcentage: 60, logo: "/icons/react.png"},
+      {title: "React Native", porcentage: 50, logo: "/icons/react.png"},
+    ],
+    skillsBE: [
+      {title: "Python", porcentage: 65, logo: "/icons/python.png"},
+      {title: "NodeJS", porcentage: 85, logo: "/icons/node1.png"},
+      {title: "MySQL & Sequelize", porcentage: 85, logo: "/icons/sequelize.png"},
+      {title: "MongoDB & Mongoose", porcentage: 85, logo: "/icons/mongo.png"},
+      {title: "GraphQL", porcentage: 30, logo: "/icons/graph.png"},
+    ],
+    others: [
+      {title: "Git Hub", porcentage: 65, logo: "/icons/gh.png"},
+      {title: "Selenium | JEST", porcentage: 30, logo: "/icons/selenium.png"},
+      {title: "Adobe XD", porcentage: 85, logo: "/icons/xd.png"},
+      {title: "Figma", porcentage: 85, logo: "/icons/figma.png"},
+      {title: "Agile", porcentage: 85, logo: "/icons/agile.png"},
+      {title: "Trello", porcentage: 30, logo: "/icons/trello.png"},
+    ]
   },
 
   getters: {
@@ -107,6 +130,9 @@ export default {
     state.projects1.find((c) => c.name === name1),
     getProgramming: (state) => state.programming1,
     getExtra: (state) => state.extra1,
+    getskillsFE: (state) => state.skillsFE,
+    getskillsBE: (state) => state.skillsBE,
+    getothers: (state) => state.others,
   },
 
   mutations: {
