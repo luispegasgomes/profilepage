@@ -10,7 +10,7 @@
         <div v-for="(info, index) in getProgramming" :key="index">
           <h1 style="font-size: 30px" class="mt-3">{{ info.date }}</h1>
           <hr class="col-8 mt-0 mb-1" style="height: 2px" />
-          <div class="d-flex align-items-center mx-3">
+          <div class="d-flex align-items-center mx-3 mb-3">
             <img :src="info.logo" width="50" height="50" />
             <p class="mt-3 mx-3 col-5">
               <span style="font-weight: bold">{{ info.title }} <br /> </span>
@@ -105,7 +105,7 @@ export default {
   border: solid 6px #123456;
   border-radius: 20px;
   background-color: white;
-  width: 440px;
+  width: 400px;
 }
 .closebtn {
   border: none;
