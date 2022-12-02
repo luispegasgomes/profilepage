@@ -29,10 +29,10 @@
     <div class="col-sm-6 certificateBox mx-5 mt-5">
       <p class="fontBarlow" style="font-size: 20px; font-weight: bold">Extra</p>
       <div>
-        <div v-for="(info, index) in getExtra" :key="index">
+        <div v-for="(info, index) in getExtra" :key="index" >
           <h1 style="font-size: 30px" class="mt-3">{{ info.date }}</h1>
           <hr class="col-8 mt-0 mb-1" style="height: 2px" />
-          <div class="d-flex align-items-center mx-3">
+          <div class="d-flex align-items-center mx-3 mb-3">
             <img :src="info.logo" width="50" height="50" />
             <p class="mt-3 mx-3 col-5">
               <span style="font-weight: bold">{{ info.title }} <br /> </span>

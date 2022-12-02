@@ -106,7 +106,7 @@ export default {
     ],
     extra1: [
       {date: "08/2022", download: "ola.pdf", logo: "certificates/campus.png", see: "ole.png", subtitle: "Graphical presentation utility", title: "Campus Digital"},
-      {date: "10/2021", download: "ola.pdf", logo: "certificates/nucleo.png", see: "ole.png", subtitle: "English Course B2.2", title: "Formação, Consultoria e Línguas"},
+      {date: "10/2021", download: "ola.pdf", logo: "certificates/nucleo.png", see: "ole.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
     ],
     skillsFE: [
       {title: "HTML", porcentage: 95, logo: "/icons/html.png"},

@@ -180,7 +180,7 @@
       <b-card style="background-color: #dbc7be">
         <div class="d-flex align-items-center justify-content-center mt-2">
           <button class="mx-3 secondaryBtns" v-on:click="close()">
-            <img src="../assets/home.png" width="30" height="30" />
+            <img src="../assets/account.png" width="30" height="30" />
           </button>
           <h1 class="colorDarkBlue" style="font-size: 30px">About Me</h1>
         </div>
