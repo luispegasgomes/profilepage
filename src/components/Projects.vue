@@ -88,7 +88,7 @@
               Main tools used
             </p>
             <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-2">
-                <div class="d-flex">
+                <div class="d-flex align-items-center justify-content-center">
                   <img
                   class="mx-2"
                   :src="object.tools[0]"
@@ -102,7 +102,7 @@
                   style="border-radius: 15px;"
                 />
               </div>
-              <div class="d-flex mt-3">
+              <div class="d-flex align-items-center justify-content-center mt-3">
                   <img
                   class="mx-2"
                   :src="object.tools[2]"
