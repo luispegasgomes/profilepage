@@ -73,7 +73,7 @@
             class="d-flex flex-column align-items-center justify-content-center"
           >
             <div class="d-flex col-10 align-items-center justify-content-center mb-1">
-              <img :src="object.logo" width="40" height="40" class="mt-1"/>
+              <img :src="object.logo" width="40" height="40" class="mt-2"/>
               <h1 class="mx-4 fontBarlow colorDarkBlue" style="font-size: 28px;">
                 {{ object.name }}
               </h1>
@@ -84,7 +84,7 @@
             >
               {{ object.description }}
             </p>
-            <p class="colorOrange mt-2" style="font-weight: bold">
+            <p class="colorOrange mt-3" style="font-weight: bold">
               Main tools used
             </p>
             <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-2">
