@@ -20,7 +20,7 @@ export default {
         promo: "pages/ac.PNG",
         subtitle: "TW Project | Group 7 | TSIW 1st Year", 
         title: "Auto Conde - Auto parts sales application",
-        tools: ["icons/html.png", "icons/css.png", "icons/js.png", "icons/vscode.png"],
+        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "none"
       },
       {
@@ -31,7 +31,7 @@ export default {
         promo: "pages/rm.png",
         subtitle: "AED Project | Group 2 | TSIW 1st Year", 
         title: "Recipe Manager - Food recipe management application",
-        tools: ["icons/python.png", "icons/tkinter.png", "icons/photoshop.png", "icons/vscode.png"],
+        tools: ["https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white", "https://img.shields.io/badge/Tkinter-000000?style=for-the-badge&logo=Tkinter&logoColor=white", "https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black", "https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "none"
       },
       {
@@ -42,7 +42,7 @@ export default {
         promo: "pages/ativon.png",
         subtitle: "Project 1 | Group 1 | TSIW 1st Year", 
         title: "AtivOn - Application of games for children about Covid-19",
-        tools: ["icons/js.png", "icons/bootstrap.png", "icons/xd.png", "icons/html.png"],
+        tools: ["https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white", "https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "https://ativ-on.vercel.app/"
       },
       {
@@ -53,7 +53,7 @@ export default {
         promo: "pages/asteroids.png",
         subtitle: "CG Project | Group 10 | TSIW 2nd Year", 
         title: "Asteroids - Recreation of the old asteroids game",
-        tools: ["icons/js.png", "icons/html.png", "icons/css.png", "icons/vscode.png"],
+        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "none"
       },
       {
@@ -64,7 +64,7 @@ export default {
         promo: "pages/autme.png",
         subtitle: "Project 2 | Group 1 | TSIW 2nd Year", 
         title: "AutMe - Global application for children with autism",
-        tools: ["icons/vue.png", "icons/sequelize.png", "icons/trello.png", "icons/figma.png"],
+        tools: ["https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D", "https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue", "https://img.shields.io/badge/RestApi-1560bd?style=for-the-badge&logo=RestApi&logoColor=white", "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"],
         website: "https://autme-luispegasgomes.vercel.app/"
       },
       {
@@ -75,7 +75,7 @@ export default {
         promo: "pages/lg.png",
         subtitle: "Personal Project", 
         title: "Luís Gomes - Personal Information Page",
-        tools: ["icons/vue.png", "icons/mongo.png", "icons/restapi.png", "icons/figma.png"],
+        tools: ["https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D", "https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white", "https://img.shields.io/badge/RestApi-1560bd?style=for-the-badge&logo=RestApi&logoColor=white", "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"],
         website: "https://luispegasgomes.pt/"
       },
       {
@@ -86,8 +86,19 @@ export default {
         promo: "pages/bmw m.jpg",
         subtitle: "Personal Project | TW | TSIW", 
         title: "BMW M Performance Parts",
-        tools: ["icons/html.png", "icons/css.png", "icons/js.png", "icons/vscode.png"],
+        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "https://m-performance-parts.vercel.app/"
+      },
+      {
+        date: "10/2022 - 01/2023", 
+        description: "The creation of an app that extends LIDEL's physical books through complementary gamified exercises.", 
+        logo: "gamibook.png", 
+        name: "Gamibook - LIDEL",
+        promo: "pages/gamibook.png",
+        subtitle: "ESMAPP | Group 6 | TSIW 3rd Year", 
+        title: "Gamibook - LIDEL",
+        tools: ["https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB", "https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white", "https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white", "https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue"],
+        website: "https://gitlab.com/cmu-2223/cmu2223-g6"
       },
 
     ],

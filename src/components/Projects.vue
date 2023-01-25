@@ -72,48 +72,52 @@
             v-if="projectinfo == true"
             class="d-flex flex-column align-items-center justify-content-center"
           >
-            <div class="d-flex">
-              <img :src="object.logo" width="50" height="50" />
-              <h1 class="mx-4 fontBarlow colorDarkBlue">
+            <div class="d-flex col-10 align-items-center justify-content-center mb-1">
+              <img :src="object.logo" width="40" height="40" />
+              <h1 class="mx-4 fontBarlow colorDarkBlue" style="font-size: 30px;">
                 {{ object.name }}
               </h1>
             </div>
             <p
               style="text-align: center"
-              class="mt-3 col-12 fontBarlow colorDarkBlue"
+              class="mt-2 col-10 fontBarlow colorDarkBlue"
             >
               {{ object.description }}
             </p>
-            <p class="colorOrange mt-2" style="font-weight: bold">
+            <p class="colorOrange mt-1" style="font-weight: bold">
               Main tools used
             </p>
-            <div class="d-flex mt-3">
-              <img
-                class="mx-3"
-                :src="object.tools[0]"
-                width="40"
-                height="40"
-              />
-              <img
-                class="mx-3"
-                :src="object.tools[1]"
-                width="40"
-                height="40"
-              />
-              <img
-                class="mx-3"
-                :src="object.tools[2]"
-                width="40"
-                height="40"
-              />
-              <img
-                class="mx-2"
-                :src="object.tools[3]"
-                width="40"
-                height="40"
-              />
+            <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-2">
+                <div class="d-flex">
+                  <img
+                  class="mx-2"
+                  :src="object.tools[0]"
+                  height="32"
+                  style="border-radius: 15px;"
+                />
+                <img
+                  class="mx-2"
+                  :src="object.tools[1]"
+                  height="32"
+                  style="border-radius: 15px;"
+                />
+              </div>
+              <div class="d-flex mt-3">
+                  <img
+                  class="mx-2"
+                  :src="object.tools[2]"
+                  height="32"
+                  style="border-radius: 15px;"
+                />
+                <img
+                  class="mx-2"
+                  :src="object.tools[3]"
+                  height="32"
+                  style="border-radius: 15px;"
+                />
+              </div>
             </div>
-            <div class="d-flex mt-4">
+            <div class="d-flex mt-2">
               <a class="mx-2 colorDarkBlue" v-b-modal.modal-1 v-on:click="sample()">See sample</a>
               <a class="mx-2 colorDarkBlue" :href="object.website">
                 Go to Website</a
@@ -187,6 +191,14 @@ export default {
   border: none;
   border-radius: 8px;
   background-color: #95adb6;
+  color: #fff;
+}
+
+.btnShow:hover {
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: #b20000;
   color: #fff;
 }
 
