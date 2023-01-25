@@ -74,7 +74,7 @@
           >
             <div class="d-flex col-10 align-items-center justify-content-center mb-1">
               <img :src="object.logo" width="40" height="40" />
-              <h1 class="mx-4 fontBarlow colorDarkBlue" style="font-size: 30px;">
+              <h1 class="mx-4 fontBarlow colorDarkBlue" style="font-size: 28px;">
                 {{ object.name }}
               </h1>
             </div>

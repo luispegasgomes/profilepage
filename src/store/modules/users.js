@@ -20,7 +20,7 @@ export default {
         promo: "pages/ac.PNG",
         subtitle: "TW Project | Group 7 | TSIW 1st Year", 
         title: "Auto Conde - Auto parts sales application",
-        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
+        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "none"
       },
       {
@@ -42,7 +42,7 @@ export default {
         promo: "pages/ativon.png",
         subtitle: "Project 1 | Group 1 | TSIW 1st Year", 
         title: "AtivOn - Application of games for children about Covid-19",
-        tools: ["https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white", "https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
+        tools: ["https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white", "https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6", "https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "https://ativ-on.vercel.app/"
       },
       {
@@ -53,7 +53,7 @@ export default {
         promo: "pages/asteroids.png",
         subtitle: "CG Project | Group 10 | TSIW 2nd Year", 
         title: "Asteroids - Recreation of the old asteroids game",
-        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
+        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "none"
       },
       {
@@ -82,11 +82,11 @@ export default {
         date: "11/2022 - 12/2022", 
         description: "This is a website that I developed as part of the TW | TSIW | ESMAD, which I decided to repeat to improve the grade, is an e-commerce store that sells sports parts for the BMW brand.", 
         logo: "bmw m.png", 
-        name: "M Performance Parts",
+        name: "M Parts",
         promo: "pages/bmw m.jpg",
         subtitle: "Personal Project | TW | TSIW", 
         title: "BMW M Performance Parts",
-        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
+        tools: ["https://img.shields.io/badge/HTML5-E34F36?style=for-the-badge&logo=html5&logoColor=white", "https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white", "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black", "https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"],
         website: "https://m-performance-parts.vercel.app/"
       },
       {
