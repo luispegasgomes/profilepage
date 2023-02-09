@@ -8,6 +8,8 @@ export default {
       {date: "08/07/2022", img:"car/piscas.png", title:"New blinkers!"},
       {date: "31/08/2022", img:"car/rim.jpeg", title:"Rim cleaning..."},
       {date: "08/10/2022", img:"car/October 8.jpeg", title:"Tire shining"},
+      {date: "02/02/2023", img:"car/manutencao.jpeg", title:"Clio maintenance"},
+      {date: "04/02/2023", img:"car/f40.png", title:"New machine!"},
       
     ],
     projects: [],
@@ -124,15 +126,15 @@ export default {
       {title: "CSS", porcentage: 75, logo: "/icons/css.png"},
       {title: "JS", porcentage: 90, logo: "/icons/js.png"},
       {title: "VueJS", porcentage: 95, logo: "/icons/vue.png"},
-      {title: "ReactJS", porcentage: 60, logo: "/icons/react.png"},
-      {title: "React Native", porcentage: 50, logo: "/icons/react.png"},
+      {title: "ReactJS", porcentage: 75, logo: "/icons/react.png"},
+      {title: "React Native", porcentage: 80, logo: "/icons/react.png"},
     ],
     skillsBE: [
       {title: "Python", porcentage: 65, logo: "/icons/python.png"},
       {title: "NodeJS", porcentage: 85, logo: "/icons/node1.png"},
       {title: "MySQL & Sequelize", porcentage: 85, logo: "/icons/sequelize.png"},
       {title: "MongoDB & Mongoose", porcentage: 85, logo: "/icons/mongo.png"},
-      {title: "GraphQL", porcentage: 30, logo: "/icons/graph.png"},
+      {title: "GraphQL", porcentage: 45, logo: "/icons/graph.png"},
     ],
     others: [
       {title: "Git Hub", porcentage: 90, logo: "/icons/gh.png"},

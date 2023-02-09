@@ -72,7 +72,7 @@
             v-if="projectinfo == true"
             class="d-flex flex-column align-items-center justify-content-center"
           >
-            <div class="d-flex col-10 align-items-center justify-content-center mb-1 mt-3">
+            <div class="d-flex col-10 align-items-center justify-content-center mb-2 mt-1">
               <img :src="object.logo" width="40" height="40"/>
               <h1 class="mx-4 fontBarlow colorDarkBlue" style="font-size: 28px;">
                 {{ object.name }}
