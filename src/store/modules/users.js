@@ -117,9 +117,12 @@ export default {
       {date: "11/2021", download: "ola.pdf", logo: "certificates/fgpe.png", see: "ole.png", subtitle: "Programming Learning Environment", title: "FGPE"},
       {date: "10/2021", download: "ola.pdf", logo: "certificates/codeweek.png", see: "ole.png", subtitle: "JuezLTI", title: "CodeWeek"},
     ],
-    extra1: [
-      {date: "08/2022", download: "ola.pdf", logo: "certificates/campus.png", see: "ole.png", subtitle: "Graphical presentation utility", title: "Campus Digital"},
-      {date: "10/2021", download: "ola.pdf", logo: "certificates/nucleo.png", see: "ole.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
+    certificates: [
+      {date: "08/2022", logo: "certificates/freecodecamp.png", subtitle: "Graphical presentation utility", title: "Campus Digital"},
+      {date: "10/2021", logo: "certificates/cursoingles.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
+      {date: "10/2021", logo: "certificates/codeweek.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
+      {date: "10/2021", logo: "certificates/fgpe.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
+      
     ],
     skillsFE: [
       {title: "HTML", porcentage: 95, logo: "/icons/html.png"},
@@ -153,7 +156,7 @@ export default {
     getOneProject: (state) => (name1) =>
     state.projects1.find((c) => c.name === name1),
     getProgramming: (state) => state.programming1,
-    getExtra: (state) => state.extra1,
+    getExtra: (state) => state.certificates,
     getskillsFE: (state) => state.skillsFE,
     getskillsBE: (state) => state.skillsBE,
     getothers: (state) => state.others,
