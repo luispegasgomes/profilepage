@@ -1,94 +1,21 @@
 <template>
   <!--PROJECTS-->
+
   <div class="row justify-content-center">
-    <div class="col-sm-7">
-      <div
-        class="
-          mx-2
-          fontBarlow
-          colorDarkBlue
-          d-flex
-          flex-column
-          align-items-start
-        "
-      >
-        <!--PERSONALPAGE-->
-        <div
-          v-for="(info, index) in getProjects.slice().reverse()"
-          :key="index"
-        >
-          <h1 style="font-size: 30px" class="mt-4">
-            {{ info.date }}
-          </h1>
-          <hr class="col-8 mt-0 mb-1" style="height: 2px" />
-          <div class="d-flex flex-column mx-3">
-            <div class="d-flex align-items-center">
-              <img :src="info.logo" width="50" height="50" />
-              <p class="mt-3 mx-3">
-                <span style="font-weight: bold">{{ info.title }}<br /> </span>
-                {{ info.subtitle }}
-              </p>
-            </div>
 
-            <button
-              class="btnShow mt-3"
-              v-on:click="openProfilePage(info.name)"
-              v-scroll-to="'#projectInfo1'"
-            >
-              Show More
-            </button>
-          </div>
+    <div class="projectBox mt-4 mb-3 mx-4 d-flex flex-column align-items-center justify-content-center bgBlue" v-for="(object, index) in getProjects.slice().reverse()" :key="index" >
+      <div class="d-flex mb-3 mt-1">
+        <img :src="object.logo" width="50" height="50">
+        <div class="d-flex flex-column" >
+          <span style="font-size: 18px; font-weight: bold;" class="fontAsap">{{object.name}}</span>
+          <span style="font-size: 15px;" class="fontBarlow">{{object.subtitle}}</span>
         </div>
-
-        <!--PERSONALPAGE-->
       </div>
-    </div>
-    <div class="col-sm-5 d-flex flex-column align-items-center mt-3">
+      <span style="font-size: 13px;">{{object.description}}</span>
+      <span class="colorDarkBlue mt-2" style="font-weight: bold;">Main tools used</span>
 
-      <transition name="fade">
-        <div
-          id="projectInfo1"
-          class="
-            boxAutme
-            col-11
-            d-flex
-            flex-column
-            align-items-center
-            justify-content-center
-            mt-2
-          "
-        >
-          <p
-            v-if="projectinfo == false"
-            class="col-10"
-            style="text-align: center"
-          >
-            To find out more about the projects I've developed, click on "Show
-            More" on the project you want to know more about.
-            <br><br><br><br>
-            <span style="font-size:35px; font-weight:bold" class="fontAsap">Luís Gomes</span> 
-          </p>
-          <div
-            v-if="projectinfo == true"
-            class="d-flex flex-column align-items-center justify-content-center"
-          >
-            <div class="d-flex col-10 align-items-center justify-content-center mb-2 mt-1">
-              <img :src="object.logo" width="40" height="40"/>
-              <h1 class="mx-4 fontBarlow colorDarkBlue" style="font-size: 28px;">
-                {{ object.name }}
-              </h1>
-            </div>
-            <p
-              style="text-align: center"
-              class="mt-2 col-10 fontBarlow colorDarkBlue"
-            >
-              {{ object.description }}
-            </p>
-            <p class="colorOrange mt-3" style="font-weight: bold">
-              Main tools used
-            </p>
-            <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-2">
-                <div class="d-flex align-items-center justify-content-center">
+      <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-2">
+        <div class="d-flex align-items-center justify-content-center">
                   <img
                   class="mx-2"
                   :src="object.tools[0]"
@@ -116,35 +43,7 @@
                   style="border-radius: 15px;"
                 />
               </div>
-            </div>
-            <div class="d-flex mt-2 mb-3">
-              <a class="mx-2 colorDarkBlue" v-b-modal.modal-1 v-on:click="sample()">See sample</a>
-              <a class="mx-2 colorDarkBlue" :href="object.website">
-                Go to Website</a
-              >
-            </div>
-          </div>
-        </div>
-      </transition>
-      <b-modal
-        id="modal-1"
-        title="Conta-nos o teu dia!"
-        ok-title="Confirmar"
-        hide-header
-        hide-footer
-      >
-
-          <div class="d-flex flex-column align-items-center justify-content-between">
-            <h1 class="mb-4 fontAsap colorDarkBlue" style="font-size:30px">{{projectTitle}}</h1>
-            <div class="fontBarlow" style="font-size: 30px">
-              <img :src="imgmodal" width="300px"/>
-            </div>
-            <button v-on:click="closeModal()" class="fontNunito closebtn mt-3">
-              Close
-            </button>
-          </div>
-
-      </b-modal>
+      </div>
     </div>
   </div>
 </template>
@@ -192,6 +91,12 @@ export default {
   border-radius: 8px;
   background-color: #95adb6;
   color: #fff;
+}
+
+.projectBox {
+  border: solid 6px #123456;
+  width: 400px;
+  height: 300px;
 }
 
 .btnShow:hover {

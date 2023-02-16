@@ -234,7 +234,7 @@
     </div>
     <!--ABOUT ME-->
 
-    <!--UNIVERSITY-->
+    <!--ACADEMIC-->
     <div id="collapse-3" v-show="academic">
       <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
@@ -278,16 +278,16 @@
         </div>
       </b-card>
     </div>
-    <!--UNIVERSITY-->
+    <!--ACADEMIC-->
 
     <!--PROJECTS-->
     <div id="collapse-4" v-show="project">
-      <b-card style="background-color: #dbc7be">
+      <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
           <button class="mx-3 secondaryBtns" v-on:click="close()">
             <img src="../assets/project.png" width="30" height="30" />
           </button>
-          <h1 class="colorDarkBlue" style="font-size: 30px">My Projects</h1>
+          <h1 class="colorWhite" style="font-size: 30px">My Projects</h1>
         </div>
         <!--Import projects component to show your content-->
         <Projects />

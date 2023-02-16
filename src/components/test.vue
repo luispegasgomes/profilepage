@@ -3,7 +3,7 @@
 
   <div class="row justify-content-center">
 
-    <div class="certificateBox mt-4 mb-3 mx-4 d-flex align-items-center justify-content-center" v-for="(info, index) in getExtra" :key="index" >
+    <div class="certificateBox mt-4 mb-3 mx-4 d-flex align-items-center justufy-content-center" v-for="(info, index) in getExtra" :key="index" >
        <img :src="info.logo" width="380" height="250">
     </div>
   </div>
