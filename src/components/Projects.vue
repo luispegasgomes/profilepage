@@ -45,10 +45,37 @@
                 />
               </div>
       </div>
+                  <div class="d-flex mt-2 mb-3">
+              <a class="mx-2 colorDarkBlue" v-b-modal.modal-1 v-on:click="sample(object)">See sample</a>
+              <a class="mx-2 colorDarkBlue" :href="object.website">
+                Go to Website</a
+              >
+            </div>
       </div>
 
     </div>
+    
+        <b-modal
+        id="modal-1"
+        title="Conta-nos o teu dia!"
+        ok-title="Confirmar"
+        hide-header
+        hide-footer
+      >
+
+          <div class="d-flex flex-column align-items-center justify-content-between">
+            <h1 class="mb-4 fontAsap colorDarkBlue" style="font-size:30px">{{projectTitle}}</h1>
+            <div class="fontBarlow" style="font-size: 30px">
+              <img :src="imgmodal" width="300px"/>
+            </div>
+            <button v-on:click="closeModal()" class="fontNunito closebtn mt-3">
+              Close
+            </button>
+          </div>
+
+      </b-modal>
   </div>
+
 </template>
 
 <script>
@@ -79,9 +106,9 @@ export default {
     closeModal() {
       this.$bvModal.hide("modal-1");
     },
-    sample(){
-      this.imgmodal = this.object.promo
-      this.projectTitle = this.object.name
+    sample(value){
+      this.projectTitle = value.name
+      this.imgmodal = value.promo
     }
   },
 };
