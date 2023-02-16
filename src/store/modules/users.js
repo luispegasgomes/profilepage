@@ -118,10 +118,10 @@ export default {
       {date: "10/2021", download: "ola.pdf", logo: "certificates/codeweek.png", see: "ole.png", subtitle: "JuezLTI", title: "CodeWeek"},
     ],
     certificates: [
-      {date: "08/2022", logo: "certificates/freecodecamp.png", subtitle: "Graphical presentation utility", title: "Campus Digital"},
-      {date: "10/2021", logo: "certificates/cursoingles.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
-      {date: "10/2021", logo: "certificates/codeweek.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
-      {date: "10/2021", logo: "certificates/fgpe.png", subtitle: "English Course B2.2", title: "Núcleo FCL"},
+      {date: "08/2022", logo: "https://github.com/luispegasgomes/images/blob/main/freecodecamp.png?raw=true", subtitle: "Graphical presentation utility", title: "Campus Digital"},
+      {date: "10/2021", logo: "https://github.com/luispegasgomes/images/blob/main/cursoingles.png?raw=true", subtitle: "English Course B2.2", title: "Núcleo FCL"},
+      {date: "10/2021", logo: "https://github.com/luispegasgomes/images/blob/main/codeweek.png?raw=true", subtitle: "English Course B2.2", title: "Núcleo FCL"},
+      {date: "10/2021", logo: "https://github.com/luispegasgomes/images/blob/main/fgpe.png?raw=true", subtitle: "English Course B2.2", title: "Núcleo FCL"},
       
     ],
     skillsFE: [
