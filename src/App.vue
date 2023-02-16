@@ -9,12 +9,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900");
 
 :root {
-  --white: #ffffff;
+  --white: #F4F4F9;
   --black: #000000;
   --grey: #ede9ec;
   --darkBlue: #102B3F;
   --blue: #95ADB6;
-  --orange: #DBC7BE;
+  --beige: #DBC7BE;
+  --orange: #FFBE0B;
 }
 
 body,
@@ -74,12 +75,16 @@ body,
   color: var(--darkBlue);
 }
 
+.colorOrange {
+  color: var(--orange);
+}
+
 .colorBlue {
   color: var(--blue);
 }
 
 .colorBeige {
-  color: var(--orange);
+  color: var(--beige);
 }
 
 .bgWhite {
@@ -103,6 +108,10 @@ body,
 }
 
 .bgBeige {
+  background: var(--beige);
+}
+
+.bgOrange {
   background: var(--orange);
 }
 </style>

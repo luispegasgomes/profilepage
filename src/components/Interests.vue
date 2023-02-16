@@ -23,7 +23,7 @@
         id="cars1"
         v-if="showCar"
       >
-        <p class="col-8 mt-3" style="text-align: center">
+        <p class="col-8 mt-3 colorWhite" style="text-align: center">
           In addition to enjoying programming, one of my passions is also the
           automobile culture, I am a car enthusiast, I really like to drive and
           take good care of my car and I like when someone asks me to take a

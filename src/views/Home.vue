@@ -177,19 +177,19 @@
 
     <!--ABOUT ME-->
     <div id="collapse2" v-show="aboutme">
-      <b-card style="background-color: #dbc7be">
+      <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
           <button class="mx-3 secondaryBtns" v-on:click="close()">
             <img src="../assets/account.png" width="36" height="36" />
           </button>
-          <h1 class="colorDarkBlue" style="font-size: 30px">About Me</h1>
+          <h1 class="colorWhite" style="font-size: 30px">About Me</h1>
         </div>
 
         <div
           class="
             mt-4
             fontBarlow
-            colorDarkBlue
+            colorWhite
             d-flex
             flex-column
             align-items-center
@@ -236,12 +236,12 @@
 
     <!--UNIVERSITY-->
     <div id="collapse-3" v-show="academic">
-      <b-card style="background-color: #dbc7be">
+      <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
           <button class="mx-3 secondaryBtns" v-on:click="close()">
             <img src="../assets/university.png" width="30" height="30" />
           </button>
-          <h1 class="colorDarkBlue" style="font-size: 30px">Academic</h1>
+          <h1 class="colorWhite" style="font-size: 30px">Academic</h1>
         </div>
 
         <div
@@ -263,7 +263,7 @@
             <img :src="info.logo" width="50" height="50" />
             <p class="mt-3 mx-3">
               <span style="font-weight: bold"> {{ info.title }} <br /> </span>
-              {{ info.subtitle }}
+              <span class="colorWhite"> {{ info.subtitle }} <br /> </span>
             </p>
           </div>
         </div>
@@ -305,7 +305,7 @@
     <!--PROJECTS-->
     <!--SKILLS-->
     <div id="collapse-5" v-if="skill">
-      <b-card style="background-color: #dbc7be">
+      <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
           <button class="mx-3 secondaryBtns" v-on:click="close()">
             <img src="../assets/skill.png" width="30" height="30" />
@@ -329,12 +329,12 @@
 
     <!--CERTIFICATE-->
     <div id="collapse-6" v-show="certificate">
-      <b-card style="background-color: #dbc7be">
+      <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
           <button class="mx-3 secondaryBtns" v-on:click="close()">
             <img src="../assets/certificate.png" width="30" height="30" />
           </button>
-          <h1 class="colorDarkBlue" style="font-size: 30px">My Certificates</h1>
+          <h1 class="colorWhite" style="font-size: 30px">My Certificates</h1>
         </div>
         <!--Import certificate component to show your content-->
         <Certificate />
@@ -353,12 +353,12 @@
 
     <!--INTERESTS-->
     <div id="collapse-7" v-show="interests">
-      <b-card style="background-color: #dbc7be">
+      <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
           <button class="mx-3 secondaryBtns" v-on:click="close()">
             <img src="../assets/hobby.png" width="30" height="30" />
           </button>
-          <h1 class="colorDarkBlue" style="font-size: 30px">My Hobbies</h1>
+          <h1 class="colorWhite" style="font-size: 30px">My Hobbies</h1>
         </div>
         <!--Import interests component to show your content-->
         <Interests />
@@ -476,7 +476,7 @@ export default {
 }
 
 .mainBtns:hover {
-  background-color: #dbc7be;
+  background-color: #ffbe0b;
 }
 .txt:hover {
   transform: scale(1.4);
@@ -600,7 +600,7 @@ export default {
 .backtotop {
   border: none;
   border-radius: 11px;
-  background-color: #dbc7be;
+  background-color: #586F7C;
   animation: wiggle 1.2s infinite;
 }
 </style>
