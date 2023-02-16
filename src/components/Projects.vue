@@ -3,15 +3,16 @@
 
   <div class="row justify-content-center">
 
-    <div class="projectBox mt-4 mb-3 mx-4 d-flex flex-column align-items-center justify-content-center bgBlue" v-for="(object, index) in getProjects.slice().reverse()" :key="index" >
-      <div class="d-flex mb-3 mt-1">
+    <div class="projectBox mt-4 mb-3 mx-4 d-flex flex-column bgBlue" v-for="(object, index) in getProjects.slice().reverse()" :key="index" >
+      <div class="d-flex mb-3 mt-3">
         <img :src="object.logo" width="50" height="50">
-        <div class="d-flex flex-column" >
+        <div class="d-flex flex-column mx-3" >
           <span style="font-size: 18px; font-weight: bold;" class="fontAsap">{{object.name}}</span>
           <span style="font-size: 15px;" class="fontBarlow">{{object.subtitle}}</span>
         </div>
       </div>
-      <span style="font-size: 13px;">{{object.description}}</span>
+      <div class="d-flex flex-column align-items-center">
+      <span style="font-size: 13px; text-align:center">{{object.description}}</span>
       <span class="colorDarkBlue mt-2" style="font-weight: bold;">Main tools used</span>
 
       <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-2">
@@ -44,6 +45,8 @@
                 />
               </div>
       </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -95,8 +98,8 @@ export default {
 
 .projectBox {
   border: solid 6px #123456;
-  width: 400px;
-  height: 300px;
+  width: 380px;
+  height: 350px;
 }
 
 .btnShow:hover {

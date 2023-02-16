@@ -38,7 +38,7 @@ export default {
       },
       {
         date: "03/2021 - 06/2021", 
-        description: "The AtivOn application consists of entertainment for children in confinement during the pandemic, and aimed to amuse and inform them about this new disease, also has several gamification elements, such as achievements and a leaderboard.", 
+        description: "Entertainment for children in confinement during the pandemic, and aimed to amuse and inform them about this new disease, also has several gamification elements, such as achievements and a leaderboard.", 
         logo: "ativon.png", 
         name: "AtivOn",
         promo: "pages/ativon.png",
