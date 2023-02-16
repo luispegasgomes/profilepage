@@ -98,7 +98,7 @@ export default {
 
 .projectBox {
   border: solid 6px #123456;
-  width: 380px;
+  width: 350px;
   height: 350px;
 }
 
