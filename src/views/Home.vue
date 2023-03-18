@@ -453,7 +453,7 @@ export default {
 
 <style scoped>
 .home {
-  height: 100%;
+  height: 100vh;
   background-image: url("../assets/testeback.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
