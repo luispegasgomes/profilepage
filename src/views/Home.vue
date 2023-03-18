@@ -17,15 +17,16 @@
         class="fontBarlow colorDarkBlue mt-4"
         style="text-align: center; font-size: 20px"
       >
-        Web Developer <br />
+        Software Developer <br />
         Porto, Portugal
       </p>
       <img
-        src="../assets/luis2.png"
+        src="../assets/luispegasgomes.jpeg"
         class="mt-3x"
+        style="border-radius: 50%"
         alt="Luis"
-        width="240"
-        height="240"
+        width="210"
+        height="210"
       />
 
       <div class="d-flex mt-5">
@@ -452,8 +453,8 @@ export default {
 
 <style scoped>
 .home {
-  position: relative;
-  background-image: url("../assets/ponte.png");
+  height: 100%;
+  background-image: url("../assets/testeback.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -476,7 +477,7 @@ export default {
 }
 
 .mainBtns:hover {
-  background-color: #ffbe0b;
+  background-color: #DBC7BE;
 }
 .txt:hover {
   transform: scale(1.4);
@@ -494,16 +495,6 @@ export default {
 .text {
   font-size: 25px;
   text-align: center;
-}
-
-.secondBack {
-  position: relative;
-  height: 85vh;
-}
-
-.secondBack2 {
-  position: relative;
-  height: 70vh;
 }
 
 .animate-charcter:hover {

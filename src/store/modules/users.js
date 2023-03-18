@@ -72,7 +72,7 @@ export default {
       {
         date: "07/2022 - 09/2022", 
         description: "This is my personal information page, which contains information about me, my projects, academic background, my skills, certificates and my personal interests.", 
-        logo: "icon.png", 
+        logo: "icoproject.png", 
         name: "Profile Page",
         promo: "pages/lg.png",
         subtitle: "Personal Project", 
