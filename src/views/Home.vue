@@ -14,7 +14,7 @@
         />mes
       </h1>
       <p
-        class="fontBarlow colorDarkBlue mt-4"
+        class="fontBarlow colorDarkBlue mt-3"
         style="text-align: center; font-size: 20px"
       >
         Software Developer<br />
@@ -22,7 +22,7 @@
       </p>
       <img
         src="../assets/luispegasgomes.jpeg"
-        class="mt-3"
+        class="mt-4"
         style="border-radius: 50%"
         alt="Luis"
         width="210"
