@@ -14,11 +14,11 @@
         />mes
       </h1>
       <p
-        class="fontBarlow colorDarkBlue mt-3"
+        class="fontBarlow colorDarkBlue mt-5"
         style="text-align: center; font-size: 20px"
       >
-        Software Developer <br />
-        Porto, Portugal
+        Software Developer<br />
+        Intern at MOG Technologies
       </p>
       <img
         src="../assets/luispegasgomes.jpeg"
