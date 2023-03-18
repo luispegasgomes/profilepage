@@ -14,7 +14,7 @@
         />mes
       </h1>
       <p
-        class="fontBarlow colorDarkBlue mt-5"
+        class="fontBarlow colorDarkBlue mt-4"
         style="text-align: center; font-size: 20px"
       >
         Software Developer<br />
