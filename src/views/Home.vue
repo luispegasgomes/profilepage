@@ -29,7 +29,7 @@
         height="210"
       />
 
-      <div class="d-flex mt-5">
+      <div class="d-flex mt-5 mb-2">
         <a href="https://github.com/luispegasgomes">
           <button class="mx-3 bgBeige btnBeige">
             <img src="../assets/github.png" width="30" />
