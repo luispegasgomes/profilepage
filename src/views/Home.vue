@@ -51,10 +51,10 @@
         </a>
       </div>
 
-      <hr class="col-8 mt-5 bgBlack" style="height: 3px" />
+      <hr class="col-8 mt-4 bgBlack" style="height: 3px" />
 
       <!--BUTTONS-->
-      <div class="row align-items-center justify-content-center mt-3 mb-5">
+      <div class="row align-items-center justify-content-center mt-4 mb-5">
         <div class="col-sm-6">
           <div class="d-flex align-items-center justify-content-center">
             <div
