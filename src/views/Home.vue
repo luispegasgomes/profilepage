@@ -1,9 +1,9 @@
 <template>
   <div class="bgBeige">
-    <div class="home bgBlue d-flex flex-column align-items-center">
+    <div class="home bgBlue d-flex flex-column align-items-center justify-content-center">
       <h1
-        class="fontAsap colorDarkBlue mt-4 animate-charcter"
-        style="font-weight: bold; font-size: 50px; text-align: center; height: 10vh"
+        class="fontAsap colorDarkBlue animate-charcter"
+        style="font-weight: bold; font-size: 7vh; text-align: center; height: 10vh; margin-top: 2vh"
         id="luis"
       >
         <span style="color: #faf9f6">I'm</span>
@@ -14,8 +14,8 @@
         />mes
       </h1>
       <p
-        class="fontBarlow colorDarkBlue mt-3"
-        style="text-align: center; font-size: 20px; height: 10vh"
+        class="fontBarlow colorDarkBlue"
+        style="text-align: center; font-size: 3vh; height: 10vh"
       >
         Software Developer<br />
         Intern at MOG Technologies
@@ -25,8 +25,8 @@
         class="mt-4"
         style="border-radius: 50%; margin-bottom: 8vh"
         alt="Luis"
-        width="210"
-        height="210"
+        width="220vh"
+        height="220vh"
       />
 
       <div class="d-flex mb-2" style="height: 10vh">
