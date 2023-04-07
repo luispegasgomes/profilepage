@@ -25,8 +25,8 @@
         class="mt-4"
         style="border-radius: 50%; margin-bottom: 8vh"
         alt="Luis"
-        width="250vh"
-        height="250vh"
+        width="230vh"
+        height="230vh"
       />
 
       <div class="d-flex mb-2" style="height: 10vh">
