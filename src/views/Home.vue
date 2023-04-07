@@ -3,7 +3,7 @@
     <div class="home bgBlue d-flex flex-column align-items-center">
       <h1
         class="fontAsap colorDarkBlue mt-4 animate-charcter"
-        style="font-weight: bold; font-size: 50px; text-align: center"
+        style="font-weight: bold; font-size: 50px; text-align: center; height: 10vh"
         id="luis"
       >
         <span style="color: #faf9f6">I'm</span>
@@ -15,7 +15,7 @@
       </h1>
       <p
         class="fontBarlow colorDarkBlue mt-3"
-        style="text-align: center; font-size: 20px"
+        style="text-align: center; font-size: 20px; height: 10vh"
       >
         Software Developer<br />
         Intern at MOG Technologies
@@ -23,13 +23,13 @@
       <img
         src="../assets/luispegasgomes.jpeg"
         class="mt-4"
-        style="border-radius: 50%"
+        style="border-radius: 50%; margin-bottom: 8vh"
         alt="Luis"
         width="210"
         height="210"
       />
 
-      <div class="d-flex mt-5 mb-2">
+      <div class="d-flex mb-2" style="height: 10vh">
         <a href="https://github.com/luispegasgomes">
           <button class="mx-3 bgBeige btnBeige">
             <img src="../assets/github.png" width="30" />
