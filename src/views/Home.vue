@@ -29,7 +29,7 @@
         height="220vh"
       />
 
-      <div class="d-flex align-items-center justify-content-center mb-2" style="height: 10vh">
+      <div class="d-flex align-items-center justify-content-center mb-2" style="height: 14vh">
         <a href="https://github.com/luispegasgomes">
           <button class="mx-3 bgBeige btnBeige">
             <img src="../assets/github.png" width="30" />
