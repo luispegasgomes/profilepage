@@ -3,7 +3,7 @@
     <div class="home bgBlue d-flex flex-column align-items-center justify-content-center">
       <h1
         class="fontAsap colorDarkBlue animate-charcter"
-        style="font-weight: bold; font-size: 7vh; text-align: center; height: 10vh; margin-top: 2vh"
+        style="font-weight: bold; font-size: 7vh; text-align: center; height: 13vh"
         id="luis"
       >
         <span style="color: #faf9f6">I'm</span>
@@ -15,7 +15,7 @@
       </h1>
       <p
         class="fontBarlow colorDarkBlue"
-        style="text-align: center; font-size: 3vh; height: 10vh"
+        style="text-align: center; font-size: 3vh; height: 13vh"
       >
         Software Developer<br />
         Intern at MOG Technologies
@@ -25,8 +25,8 @@
         class="mt-4"
         style="border-radius: 50%; margin-bottom: 8vh"
         alt="Luis"
-        width="220vh"
-        height="220vh"
+        width="250vh"
+        height="250vh"
       />
 
       <div class="d-flex mb-2" style="height: 10vh">
