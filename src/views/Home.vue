@@ -23,7 +23,7 @@
       <img
         src="../assets/luispegasgomes.jpeg"
         class="mt-4"
-        style="border-radius: 50%; margin-bottom: 8vh"
+        style="border-radius: 50%; margin-bottom: 5vh"
         alt="Luis"
         width="220vh"
         height="220vh"
