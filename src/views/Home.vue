@@ -21,7 +21,7 @@
         Intern at MOG Technologies
       </p>
       <img
-        src="../assets/luisgomes.jpg"
+        src="../assets/icon.png"
         class="mt-4"
         style="border-radius: 50%; margin-bottom: 5vh"
         alt="Luis"
