@@ -2,8 +2,6 @@ export default {
   state: {
     hobbies: [],
     hobbies1: [
-      {date: "20/04/2019", img:"car/ge.jpg", title:"Memories..."},
-      {date: "23/05/2020", img:"car/hyundai.png", title:"Misses!"},
       {date: "14/07/2021", img:"car/driving.jpeg", title:"Just driving"},
       {date: "08/07/2022", img:"car/piscas.png", title:"New blinkers!"},
       {date: "31/08/2022", img:"car/rim.jpeg", title:"Rim cleaning..."},
