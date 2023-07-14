@@ -163,7 +163,7 @@
             >
               <button
                 class="mx-4 mainBtns"
-                v-on:click="openPage('interests')"
+                v-on:click="openPage('hobbies')"
                 v-scroll-to="'#collapse-7'"
               >
                 <img src="../assets/hobby.png" width="30" height="30" />
@@ -176,213 +176,30 @@
       <!--BUTTONS-->
     </div>
 
-    <!--ABOUT ME-->
-    <div id="collapse2" v-show="getPageOpened === 'about'">
-      <b-card style="background-color: #586F7C">
-        <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="openPage('about')">
-            <img src="../assets/account.png" width="36" height="36" />
-          </button>
-          <h1 class="colorWhite" style="font-size: 30px">About Me</h1>
-        </div>
+    <!-- Import all collapses -->
 
-        <div
-          class="
-            mt-4
-            fontBarlow
-            colorWhite
-            d-flex
-            flex-column
-            align-items-center
-          "
-        >
-          <img src="../assets/curriculo.png" width="50px" class="mt-4" />
-          <p class="text col-10 mt-3">
-            I love programming because I really like to understand how things
-            are built, this whole process of construction from protyping to the
-            final product, fascinates me because it is a huge satisfaction when
-            we see that our work was successful and corresponds to what is
-            intended . I also love working in a team, as several people working
-            with the same purpose but with different ways of thinking, make each
-            of us learn from the tips of other colleagues, making the work more
-            solid and consistent and also enriching the our skills and the way
-            we deal with other everyday situations because we learn different
-            ways of thinking.
-          </p>
+    <About/>
 
-          <img src="../assets/mail.png" width="50px" class="mt-5" />
-          <p class="text mt-3">luispegasgomes@gmail.com</p>
+    <Academic />
 
-          <img src="../assets/book.png" width="50px" class="mt-5" />
-          <p class="text mt-3">
-            Technologies and Information Systems for the Web <br />
-            ESMAD | Escola Superior de Media Artes e Design
-          </p>
-          <img src="../assets/casa.png" width="50px" class="mt-5" />
-          <p class="text mt-3">Santa Marinha do Zêzere, Baião</p>
-          <img src="../assets/birth.png" width="50px" class="mt-5" />
-          <p class="text mt-3">September 15, 2002</p>
+    <Projects />
 
-          <button
-            class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="openPage('about')"
-          >
-            <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2 colorDarkBlue">Back to top!</span>
-          </button>
-        </div>
-      </b-card>
-    </div>
-    <!--ABOUT ME-->
+    <Skills />
 
-    <!--ACADEMIC-->
-    <div id="collapse-3" v-show="getPageOpened === 'academic'">
-      <b-card style="background-color: #586F7C">
-        <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="openPage('academic')">
-            <img src="../assets/university.png" width="30" height="30" />
-          </button>
-          <h1 class="colorWhite" style="font-size: 30px">Academic</h1>
-        </div>
+    <Certificate />
 
-        <div
-          class="
-            mt-4
-            mx-2
-            fontBarlow
-            colorDarkBlue
-            d-flex
-            flex-column
-            align-items-start
-          "
-          v-for="(info, index) in getAcademics.slice().reverse()"
-          :key="index"
-        >
-          <h1 style="font-size: 30px">{{ info.date }}</h1>
-          <hr class="col-5 mt-0 mb-1" style="height: 2px" />
-          <div class="d-flex align-items-center mx-3">
-            <img :src="info.logo" width="50" height="50" />
-            <p class="mt-3 mx-3">
-              <span style="font-weight: bold"> {{ info.title }} <br /> </span>
-              <span class="colorWhite"> {{ info.subtitle }} <br /> </span>
-            </p>
-          </div>
-        </div>
-        <div class="d-flex flex-column align-items-center">
-          <button
-            class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="openPage('academic')"
-          >
-            <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2 colorDarkBlue">Back to top!</span>
-          </button>
-        </div>
-      </b-card>
-    </div>
-    <!--ACADEMIC-->
+    <Hobbies />
 
-    <!--PROJECTS-->
-    <div id="collapse-4" v-show="getPageOpened === 'project'">
-      <b-card style="background-color: #586F7C">
-        <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="openPage('project')">
-            <img src="../assets/project.png" width="30" height="30" />
-          </button>
-          <h1 class="colorWhite" style="font-size: 30px">My Projects</h1>
-        </div>
-        <!--Import projects component to show your content-->
-        <Projects />
-        <div class="d-flex flex-column align-items-center">
-          <button
-            class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="openPage('project')"
-          >
-            <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2 colorDarkBlue">Back to top!</span>
-          </button>
-        </div>
-      </b-card>
-    </div>
-    <!--PROJECTS-->
-    <!--SKILLS-->
-    <div id="collapse-5" v-show="getPageOpened === 'skill'">
-      <b-card style="background-color: #586F7C">
-        <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="openPage('skill')">
-            <img src="../assets/skill.png" width="30" height="30" />
-          </button>
-          <h1 class="colorDarkBlue" style="font-size: 30px">My Skills</h1>
-        </div>
-        <!--Import skills component to show your content-->
-        <Skills />
-        <div class="d-flex flex-column align-items-center">
-          <button
-            class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="openPage('skill')"
-          >
-            <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2 colorDarkBlue">Back to top!</span>
-          </button>
-        </div>
-      </b-card>
-    </div>
-    <!--SKILLS-->
-
-    <!--CERTIFICATE-->
-    <div id="collapse-6" v-show="getPageOpened === 'certificate'">
-      <b-card style="background-color: #586F7C">
-        <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="openPage('certificate')">
-            <img src="../assets/certificate.png" width="30" height="30" />
-          </button>
-          <h1 class="colorWhite" style="font-size: 30px">My Certificates</h1>
-        </div>
-        <!--Import certificate component to show your content-->
-        <Certificate />
-        <div class="d-flex flex-column align-items-center">
-          <button
-            class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="openPage('certificate')"
-          >
-            <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2 colorDarkBlue">Back to top!</span>
-          </button>
-        </div>
-      </b-card>
-    </div>
-    <!--CERTIFICATE-->
-
-    <!--INTERESTS-->
-    <div id="collapse-7" v-show="getPageOpened === 'interests'">
-      <b-card style="background-color: #586F7C">
-        <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="openPage('interests')">
-            <img src="../assets/hobby.png" width="30" height="30" />
-          </button>
-          <h1 class="colorWhite" style="font-size: 30px">My Hobbies</h1>
-        </div>
-        <!--Import interests component to show your content-->
-        <Interests />
-        <div class="d-flex flex-column align-items-center">
-          <button
-            class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="openPage('interests')"
-          >
-            <img width="40" src="../assets/up.png" alt="Back to top!" />
-            <span class="mt-2 colorDarkBlue">Back to top!</span>
-          </button>
-        </div>
-      </b-card>
-    </div>
-    <!--INTERESTS-->
   </div>
 </template>
 
 <script>
-import Projects from "../components/Projects.vue";
-import Skills from "../components/Skills.vue";
-import Certificate from "../components/Certificate.vue";
-import Interests from "../components/Interests.vue";
+import About from '../components/collapses/About'
+import Academic from "../components/collapses/Academic.vue"
+import Projects from "../components/collapses/Projects.vue";
+import Skills from "../components/collapses/Skills.vue";
+import Certificate from "../components/collapses/Certificate.vue";
+import Hobbies from "../components/collapses/Hobbies.vue";
 import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "Home",
@@ -393,14 +210,16 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["getAcademics", "getPageOpened"]),
+    ...mapGetters(["getPageOpened"]),
   },
 
   components: {
+    About,
+    Academic,
     Projects,
     Skills,
     Certificate,
-    Interests,
+    Hobbies,
   },
   methods: {
     openPage(value) {
@@ -548,10 +367,4 @@ export default {
   background-color: #dbc7be;
 }
 
-.backtotop {
-  border: none;
-  border-radius: 11px;
-  background-color: #586F7C;
-  animation: wiggle 1.2s infinite;
-}
 </style>
