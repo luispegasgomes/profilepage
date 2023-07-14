@@ -67,7 +67,7 @@
               "
             >
               <button
-                v-on:click="openAbout()"
+                v-on:click="openPage('about')"
                 v-scroll-to="'#collapse2'"
                 class="mx-4 mainBtns"
               >
@@ -86,7 +86,7 @@
               "
             >
               <button
-                v-on:click="openAcademic()"
+                v-on:click="openPage('academic')"
                 v-scroll-to="'#collapse-3'"
                 class="mx-4 mainBtns"
               >
@@ -104,7 +104,7 @@
               "
             >
               <button
-                v-on:click="openProject()"
+                v-on:click="openPage('project')"
                 v-scroll-to="'#collapse-4'"
                 class="mx-4 mainBtns"
               >
@@ -127,7 +127,7 @@
             >
               <button
                 class="mx-4 mainBtns"
-                v-on:click="openSkills()"
+                v-on:click="openPage('skill')"
                 v-scroll-to="'#collapse-5'"
               >
                 <img src="../assets/skill.png" width="30" height="30" />
@@ -144,7 +144,7 @@
               "
             >
               <button
-                v-on:click="openCertificate()"
+                v-on:click="openPage('certificate')"
                 v-scroll-to="'#collapse-6'"
                 class="mx-4 mainBtns"
               >
@@ -163,7 +163,7 @@
             >
               <button
                 class="mx-4 mainBtns"
-                v-on:click="openInterests()"
+                v-on:click="openPage('interests')"
                 v-scroll-to="'#collapse-7'"
               >
                 <img src="../assets/hobby.png" width="30" height="30" />
@@ -177,10 +177,10 @@
     </div>
 
     <!--ABOUT ME-->
-    <div id="collapse2" v-show="aboutme">
+    <div id="collapse2" v-show="getPageOpened === 'about'">
       <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="close()">
+          <button class="mx-3 secondaryBtns" v-on:click="openPage('about')">
             <img src="../assets/account.png" width="36" height="36" />
           </button>
           <h1 class="colorWhite" style="font-size: 30px">About Me</h1>
@@ -225,7 +225,7 @@
 
           <button
             class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="close()"
+            v-on:click="openPage('about')"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
             <span class="mt-2 colorDarkBlue">Back to top!</span>
@@ -236,10 +236,10 @@
     <!--ABOUT ME-->
 
     <!--ACADEMIC-->
-    <div id="collapse-3" v-show="academic">
+    <div id="collapse-3" v-show="getPageOpened === 'academic'">
       <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="close()">
+          <button class="mx-3 secondaryBtns" v-on:click="openPage('academic')">
             <img src="../assets/university.png" width="30" height="30" />
           </button>
           <h1 class="colorWhite" style="font-size: 30px">Academic</h1>
@@ -271,7 +271,7 @@
         <div class="d-flex flex-column align-items-center">
           <button
             class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="close()"
+            v-on:click="openPage('academic')"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
             <span class="mt-2 colorDarkBlue">Back to top!</span>
@@ -282,10 +282,10 @@
     <!--ACADEMIC-->
 
     <!--PROJECTS-->
-    <div id="collapse-4" v-show="project">
+    <div id="collapse-4" v-show="getPageOpened === 'project'">
       <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="close()">
+          <button class="mx-3 secondaryBtns" v-on:click="openPage('project')">
             <img src="../assets/project.png" width="30" height="30" />
           </button>
           <h1 class="colorWhite" style="font-size: 30px">My Projects</h1>
@@ -295,7 +295,7 @@
         <div class="d-flex flex-column align-items-center">
           <button
             class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="close()"
+            v-on:click="openPage('project')"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
             <span class="mt-2 colorDarkBlue">Back to top!</span>
@@ -305,10 +305,10 @@
     </div>
     <!--PROJECTS-->
     <!--SKILLS-->
-    <div id="collapse-5" v-if="skill">
+    <div id="collapse-5" v-show="getPageOpened === 'skill'">
       <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="close()">
+          <button class="mx-3 secondaryBtns" v-on:click="openPage('skill')">
             <img src="../assets/skill.png" width="30" height="30" />
           </button>
           <h1 class="colorDarkBlue" style="font-size: 30px">My Skills</h1>
@@ -318,7 +318,7 @@
         <div class="d-flex flex-column align-items-center">
           <button
             class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="close()"
+            v-on:click="openPage('skill')"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
             <span class="mt-2 colorDarkBlue">Back to top!</span>
@@ -329,10 +329,10 @@
     <!--SKILLS-->
 
     <!--CERTIFICATE-->
-    <div id="collapse-6" v-show="certificate">
+    <div id="collapse-6" v-show="getPageOpened === 'certificate'">
       <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="close()">
+          <button class="mx-3 secondaryBtns" v-on:click="openPage('certificate')">
             <img src="../assets/certificate.png" width="30" height="30" />
           </button>
           <h1 class="colorWhite" style="font-size: 30px">My Certificates</h1>
@@ -342,7 +342,7 @@
         <div class="d-flex flex-column align-items-center">
           <button
             class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="close()"
+            v-on:click="openPage('certificate')"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
             <span class="mt-2 colorDarkBlue">Back to top!</span>
@@ -353,10 +353,10 @@
     <!--CERTIFICATE-->
 
     <!--INTERESTS-->
-    <div id="collapse-7" v-show="interests">
+    <div id="collapse-7" v-show="getPageOpened === 'interests'">
       <b-card style="background-color: #586F7C">
         <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="close()">
+          <button class="mx-3 secondaryBtns" v-on:click="openPage('interests')">
             <img src="../assets/hobby.png" width="30" height="30" />
           </button>
           <h1 class="colorWhite" style="font-size: 30px">My Hobbies</h1>
@@ -366,7 +366,7 @@
         <div class="d-flex flex-column align-items-center">
           <button
             class="d-flex flex-column align-items-center backtotop mt-3"
-            v-on:click="close()"
+            v-on:click="openPage('interests')"
           >
             <img width="40" src="../assets/up.png" alt="Back to top!" />
             <span class="mt-2 colorDarkBlue">Back to top!</span>
@@ -383,22 +383,17 @@ import Projects from "../components/Projects.vue";
 import Skills from "../components/Skills.vue";
 import Certificate from "../components/Certificate.vue";
 import Interests from "../components/Interests.vue";
-import { mapGetters } from "vuex";
+import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "Home",
   data() {
     return {
-      aboutme: false,
-      academic: false,
-      project: false,
-      skill: false,
-      certificate: false,
-      interests: false,
+
     };
   },
 
   computed: {
-    ...mapGetters(["getAcademics"]),
+    ...mapGetters(["getAcademics", "getPageOpened"]),
   },
 
   components: {
@@ -408,45 +403,10 @@ export default {
     Interests,
   },
   methods: {
-    openAbout() {
-      this.aboutme = true;
+    openPage(value) {
+      this.CHANGE_PAGE_OPEN(value);
     },
-    openAcademic() {
-      this.academic = true;
-    },
-    openProject() {
-      this.project = true;
-    },
-    openSkills() {
-      this.skill = true;
-    },
-    openCertificate() {
-      this.certificate = true;
-    },
-    openInterests() {
-      this.interests = true;
-    },
-    close() {
-      window.scrollTo(0, 0);
-      if (this.academic) {
-        setTimeout(() => (this.academic = false), 500);
-      }
-      if (this.aboutme) {
-        setTimeout(() => (this.aboutme = false), 500);
-      }
-      if (this.project) {
-        setTimeout(() => (this.project = false), 500);
-      }
-      if (this.certificate) {
-        setTimeout(() => (this.certificate = false), 500);
-      }
-      if (this.interests) {
-        setTimeout(() => (this.interests = false), 500);
-      }
-      if (this.skill) {
-        setTimeout(() => (this.skill = false), 500);
-      }
-    },
+    ...mapMutations(["CHANGE_PAGE_OPEN"]),
   },
 };
 </script>
