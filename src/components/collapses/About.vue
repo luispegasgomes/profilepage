@@ -1,13 +1,7 @@
 <template>
     <div id="collapse2" v-show="getPageOpened === 'about'">
       <b-card style="background-color: #586F7C">
-        <div class="d-flex align-items-center justify-content-center mt-2">
-          <button class="mx-3 secondaryBtns" v-on:click="openPage('about')">
-            <img src="../../assets/account.png" width="36" height="36" />
-          </button>
-          <h1 class="colorWhite" style="font-size: 30px">About Me</h1>
-        </div>
-
+        <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
         <div
           class="
             mt-4
@@ -53,13 +47,17 @@
 
 
 <script>
+
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
+import collapseHeader from "../parts/collapse-header.vue"
+
 export default {
   name: "About",
   data() {
     return {
-      collapseName: 'about'
+      collapseName: 'about',
+      headerName: 'About Me'
     };
   },
 
@@ -69,6 +67,7 @@ export default {
 
   components: {
     scrollToTop,
+    collapseHeader,
   },
   methods: {
     openPage(value) {
@@ -80,14 +79,6 @@ export default {
 </script>
 
 <style scoped>
-.secondaryBtns {
-  border: none;
-  border-radius: 100px;
-  background-color: #102b3f;
-  width: 60px;
-  height: 60px;
-}
-
 .text {
   font-size: 25px;
   text-align: center;

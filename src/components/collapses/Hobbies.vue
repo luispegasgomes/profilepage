@@ -1,12 +1,7 @@
 <template>
   <div id="collapse-7" v-show="getPageOpened === 'hobbies'">
     <b-card style="background-color: #586F7C">
-      <div class="d-flex align-items-center justify-content-center mt-2">
-        <button class="mx-3 secondaryBtns" v-on:click="openPage('hobbies')">
-          <img src="../../assets/hobby.png" width="30" height="30" />
-        </button>
-        <h1 class="colorWhite" style="font-size: 30px">My Hobbies</h1>
-      </div>
+      <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
       <div>
         <div class="d-flex flex-column align-items-center justify-content-center mt-4">
           <div class="mt-2">
@@ -110,6 +105,7 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
+import collapseHeader from "../parts/collapse-header.vue"
 
 export default {
   name: "Hobbies",
@@ -118,13 +114,14 @@ export default {
     return {
       showCar: true,
       showFootball: false,
-      collapseName: 'hobbies'
-
+      collapseName: 'hobbies',
+      headerName: 'Hobbies'
     };
   },
 
   components: {
     scrollToTop,
+    collapseHeader,
   },
 
   computed: {

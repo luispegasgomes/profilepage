@@ -3,12 +3,8 @@
   <!--NEW SKILLS PAGE-->
   <div id="collapse-5" v-show="getPageOpened === 'skill'">
     <b-card style="background-color: #586F7C">
-      <div class="d-flex align-items-center justify-content-center mt-2">
-        <button class="mx-3 secondaryBtns" v-on:click="openPage('skill')">
-          <img src="../../assets/skill.png" width="30" height="30" />
-        </button>
-        <h1 class="colorDarkBlue" style="font-size: 30px">My Skills</h1>
-      </div>
+      <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
+
       <div class="row justify-content-center">
         <!--FRONT-END-->
         <div class="col-sm-6 skills2Box mt-5">
@@ -69,18 +65,21 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
+import collapseHeader from "../parts/collapse-header.vue"
 
 export default {
   name: "Skills",
 
   data() {
     return {
-      collapseName: 'skill'
+      collapseName: 'skill',
+      headerName: 'Skills'
     };
   },
 
   components: {
     scrollToTop,
+    collapseHeader
   },
 
   computed: {

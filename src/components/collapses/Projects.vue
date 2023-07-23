@@ -2,12 +2,8 @@
   <!--PROJECTS-->
   <div id="collapse-4" v-show="getPageOpened === 'project'">
     <b-card style="background-color: #586F7C">
-      <div class="d-flex align-items-center justify-content-center mt-2">
-        <button class="mx-3 secondaryBtns" v-on:click="openPage('project')">
-          <img src="../../assets/project.png" width="30" height="30" />
-        </button>
-        <h1 class="colorWhite" style="font-size: 30px">My Projects</h1>
-      </div>
+      <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
+
       <div class="row justify-content-center">
 
         <div class="projectBox mt-4 mb-3 mx-4 d-flex flex-column bgBlue"
@@ -64,6 +60,7 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
+import collapseHeader from "../parts/collapse-header.vue"
 
 export default {
   name: "Projects",
@@ -73,7 +70,8 @@ export default {
       imgmodal: 'empty',
       projectTitle: 'empty',
       object: {},
-      collapseName: 'project'
+      collapseName: 'project',
+      headerName: "Projects"
     };
   },
 
@@ -83,6 +81,7 @@ export default {
 
   components: {
     scrollToTop,
+    collapseHeader
   },
 
   methods: {

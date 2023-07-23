@@ -2,12 +2,7 @@
   <!--CERTIFICATE-->
   <div id="collapse-6" v-show="getPageOpened === 'certificate'">
     <b-card style="background-color: #586F7C">
-      <div class="d-flex align-items-center justify-content-center mt-2">
-        <button class="mx-3 secondaryBtns" v-on:click="openPage('certificate')">
-          <img src="../../assets/certificate.png" width="30" height="30" />
-        </button>
-        <h1 class="colorWhite" style="font-size: 30px">My Certificates</h1>
-      </div>
+      <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
       <div class="row justify-content-center">
         <div class="certificateBox mt-4 mb-3 mx-4 d-flex align-items-center justify-content-center"
           v-for="(info, index) in getExtra" :key="index">
@@ -22,18 +17,21 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
+import collapseHeader from "../parts/collapse-header.vue"
 
 export default {
   name: "Certificate",
 
   data() {
     return {
-      collapseName: 'certificate'
+      collapseName: 'certificate',
+      headerName: 'Certificates'
     };
   },
 
   components: {
     scrollToTop,
+    collapseHeader
   },
 
   computed: {

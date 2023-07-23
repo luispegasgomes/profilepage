@@ -71,7 +71,7 @@
                 v-scroll-to="'#collapse2'"
                 class="mx-4 mainBtns"
               >
-                <img src="../assets/account.png" width="36" height="36" />
+                <img :src="getIconPath('about')" width="36" height="36" />
               </button>
 
               <p class="colorDarkBlue fontAsap">About Me</p>
@@ -90,7 +90,7 @@
                 v-scroll-to="'#collapse-3'"
                 class="mx-4 mainBtns"
               >
-                <img src="../assets/university.png" width="30" height="30" />
+                <img :src="getIconPath('academic')" width="30" height="30" />
               </button>
               <p class="colorDarkBlue fontAsap">Academic</p>
             </div>
@@ -108,7 +108,7 @@
                 v-scroll-to="'#collapse-4'"
                 class="mx-4 mainBtns"
               >
-                <img src="../assets/project.png" width="30" height="30" />
+                <img :src="getIconPath('project')" width="30" height="30" />
               </button>
               <p class="colorDarkBlue fontAsap">Projects</p>
             </div>
@@ -130,7 +130,7 @@
                 v-on:click="openPage('skill')"
                 v-scroll-to="'#collapse-5'"
               >
-                <img src="../assets/skill.png" width="30" height="30" />
+                <img :src="getIconPath('skill')" width="30" height="30" />
               </button>
               <p class="colorDarkBlue fontAsap">Skills</p>
             </div>
@@ -148,7 +148,7 @@
                 v-scroll-to="'#collapse-6'"
                 class="mx-4 mainBtns"
               >
-                <img src="../assets/certificate.png" width="30" height="30" />
+                <img :src="getIconPath('certificate')" width="30" height="30" />
               </button>
               <p class="colorDarkBlue fontAsap">Certificates</p>
             </div>
@@ -166,7 +166,7 @@
                 v-on:click="openPage('hobbies')"
                 v-scroll-to="'#collapse-7'"
               >
-                <img src="../assets/hobby.png" width="30" height="30" />
+                <img :src="getIconPath('hobbies')" width="30" height="30" />
               </button>
               <p class="colorDarkBlue fontAsap">Hobbies</p>
             </div>
@@ -176,7 +176,7 @@
       <!--BUTTONS-->
     </div>
 
-    <!-- Import all collapses -->
+    <!-- Call all collapses -->
 
     <About/>
 
@@ -200,16 +200,14 @@ import Projects from "../components/collapses/Projects.vue";
 import Skills from "../components/collapses/Skills.vue";
 import Certificate from "../components/collapses/Certificate.vue";
 import Hobbies from "../components/collapses/Hobbies.vue";
+
+import { getIcon } from '../helpers/getImgSrc.js';
 import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "Home",
-  data() {
-    return {
-
-    };
-  },
 
   computed: {
+
     ...mapGetters(["getPageOpened"]),
   },
 
@@ -221,9 +219,13 @@ export default {
     Certificate,
     Hobbies,
   },
+  
   methods: {
     openPage(value) {
       this.CHANGE_PAGE_OPEN(value);
+    },
+    getIconPath(value) {
+      return getIcon(value);
     },
     ...mapMutations(["CHANGE_PAGE_OPEN"]),
   },
