@@ -36,12 +36,12 @@
 
       <!--BUTTONS-->
       <div class="row align-items-center justify-content-center mb-5">
-        <div class="col-sm-6 d-flex mt-3">
+        <div class="col-sm-6 d-flex mt-4">
           <mainButton :collapseName="'about'" :headerName="'About Me'" :collapseNumber="'#collapse-about'"/>
           <mainButton :collapseName="'academic'" :headerName="'Academic'" :collapseNumber="'#collapse-academic'"/>
           <mainButton :collapseName="'project'" :headerName="'Projects'" :collapseNumber="'#collapse-project'"/>
         </div>
-        <div class="col-sm-6 d-flex mt-3">
+        <div class="col-sm-6 d-flex mt-4">
           <mainButton :collapseName="'skill'" :headerName="'Skills'" :collapseNumber="'#collapse-skill'"/>
           <mainButton :collapseName="'certificate'" :headerName="'Certificates'" :collapseNumber="'#collapse-certificate'"/>
           <mainButton :collapseName="'hobbies'" :headerName="'Hobbies'" :collapseNumber="'#collapse-hobbie'"/>
