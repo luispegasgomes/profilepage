@@ -1,6 +1,6 @@
 <template>
   <!--PROJECTS-->
-  <div id="collapse-4" v-show="getPageOpened === 'project'">
+  <div id="collapse-project" v-show="getPageOpened === 'project'">
     <b-card style="background-color: #586F7C">
       <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
 

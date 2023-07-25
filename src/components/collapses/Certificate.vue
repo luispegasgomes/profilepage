@@ -1,6 +1,6 @@
 <template>
   <!--CERTIFICATE-->
-  <div id="collapse-6" v-show="getPageOpened === 'certificate'">
+  <div id="collapse-certificate" v-show="getPageOpened === 'certificate'">
     <b-card style="background-color: #586F7C">
       <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
       <div class="row justify-content-center">

@@ -1,33 +1,17 @@
 <template>
   <div class="bgBeige">
     <div class="home bgBlue d-flex flex-column align-items-center justify-content-center">
-      <h1
-        class="fontAsap colorDarkBlue animate-charcter mt-4"
-        style="font-weight: bold; font-size: 7vh; text-align: center; height: 12vh"
-        id="luis"
-      >
+      <h1 class="fontAsap colorDarkBlue animate-charcter mt-4"
+        style="font-weight: bold; font-size: 7vh; text-align: center; height: 12vh" id="luis">
         <span style="color: #faf9f6">I'm</span>
-        Luís G<img
-          class="rotateRim"
-          src="../assets/wheel.png"
-          width="32px"
-        />mes
+        Luís G<img class="rotateRim" src="../assets/wheel.png" width="32px" />mes
       </h1>
-      <p
-        class="fontBarlow colorDarkBlue"
-        style="text-align: center; font-size: 3vh; height: 12vh"
-      >
+      <p class="fontBarlow colorDarkBlue" style="text-align: center; font-size: 3vh; height: 12vh">
         Software Developer<br />
         Intern at MOG Technologies
       </p>
-      <img
-        src="../assets/luisgomes.jpg"
-        class="mt-4"
-        style="border-radius: 50%; margin-bottom: 5vh"
-        alt="Luis"
-        width="220vh"
-        height="220vh"
-      />
+      <img src="../assets/luisgomes.jpg" class="mt-4" style="border-radius: 50%; margin-bottom: 5vh" alt="Luis"
+        width="220vh" height="220vh" />
 
       <div class="d-flex align-items-center justify-content-center mb-2" style="height: 14vh">
         <a href="https://github.com/luispegasgomes">
@@ -36,10 +20,7 @@
           </button>
         </a>
         <a href="mailto:luispegasgomes@gmail.com">
-          <button
-            class="mx-3 bgDarkBlue btnBeige fontBarlow hireme"
-            style="width: 150px"
-          >
+          <button class="mx-3 bgDarkBlue btnBeige fontBarlow hireme" style="width: 150px">
             <img src="../assets/hiring.png" width="30" />
             <span class="mx-3 colorWhite">Hire me!</span>
           </button>
@@ -54,123 +35,16 @@
       <hr class="col-8 mt-4 bgBlack" style="height: 3px" />
 
       <!--BUTTONS-->
-      <div class="row align-items-center justify-content-center mt-4 mb-5">
-        <div class="col-sm-6">
-          <div class="d-flex align-items-center justify-content-center">
-            <div
-              class="
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-                txt
-              "
-            >
-              <button
-                v-on:click="openPage('about')"
-                v-scroll-to="'#collapse2'"
-                class="mx-4 mainBtns"
-              >
-                <img :src="getIconPath('about')" width="36" height="36" />
-              </button>
-
-              <p class="colorDarkBlue fontAsap">About Me</p>
-            </div>
-            <div
-              class="
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-                txt
-              "
-            >
-              <button
-                v-on:click="openPage('academic')"
-                v-scroll-to="'#collapse-3'"
-                class="mx-4 mainBtns"
-              >
-                <img :src="getIconPath('academic')" width="30" height="30" />
-              </button>
-              <p class="colorDarkBlue fontAsap">Academic</p>
-            </div>
-            <div
-              class="
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-                txt
-              "
-            >
-              <button
-                v-on:click="openPage('project')"
-                v-scroll-to="'#collapse-4'"
-                class="mx-4 mainBtns"
-              >
-                <img :src="getIconPath('project')" width="30" height="30" />
-              </button>
-              <p class="colorDarkBlue fontAsap">Projects</p>
-            </div>
-          </div>
+      <div class="row align-items-center justify-content-center mb-5">
+        <div class="col-sm-6 d-flex mt-3">
+          <mainButton :collapseName="'about'" :headerName="'About Me'" :collapseNumber="'#collapse-about'"/>
+          <mainButton :collapseName="'academic'" :headerName="'Academic'" :collapseNumber="'#collapse-academic'"/>
+          <mainButton :collapseName="'project'" :headerName="'Projects'" :collapseNumber="'#collapse-project'"/>
         </div>
-        <div class="col-sm-6 mt-2">
-          <div class="d-flex align-items-center justify-content-center">
-            <div
-              class="
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-                txt
-              "
-            >
-              <button
-                class="mx-4 mainBtns"
-                v-on:click="openPage('skill')"
-                v-scroll-to="'#collapse-5'"
-              >
-                <img :src="getIconPath('skill')" width="30" height="30" />
-              </button>
-              <p class="colorDarkBlue fontAsap">Skills</p>
-            </div>
-            <div
-              class="
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-                txt
-              "
-            >
-              <button
-                v-on:click="openPage('certificate')"
-                v-scroll-to="'#collapse-6'"
-                class="mx-4 mainBtns"
-              >
-                <img :src="getIconPath('certificate')" width="30" height="30" />
-              </button>
-              <p class="colorDarkBlue fontAsap">Certificates</p>
-            </div>
-            <div
-              class="
-                d-flex
-                flex-column
-                align-items-center
-                justify-content-center
-                txt
-              "
-            >
-              <button
-                class="mx-4 mainBtns"
-                v-on:click="openPage('hobbies')"
-                v-scroll-to="'#collapse-7'"
-              >
-                <img :src="getIconPath('hobbies')" width="30" height="30" />
-              </button>
-              <p class="colorDarkBlue fontAsap">Hobbies</p>
-            </div>
-          </div>
+        <div class="col-sm-6 d-flex mt-3">
+          <mainButton :collapseName="'skill'" :headerName="'Skills'" :collapseNumber="'#collapse-skill'"/>
+          <mainButton :collapseName="'certificate'" :headerName="'Certificates'" :collapseNumber="'#collapse-certificate'"/>
+          <mainButton :collapseName="'hobbies'" :headerName="'Hobbies'" :collapseNumber="'#collapse-hobbie'"/>
         </div>
       </div>
       <!--BUTTONS-->
@@ -178,7 +52,7 @@
 
     <!-- Call all collapses -->
 
-    <About/>
+    <About />
 
     <Academic />
 
@@ -201,6 +75,8 @@ import Skills from "../components/collapses/Skills.vue";
 import Certificate from "../components/collapses/Certificate.vue";
 import Hobbies from "../components/collapses/Hobbies.vue";
 
+import mainButton from '../components/parts/main-button.vue';
+
 import { getIcon } from '../helpers/getImgSrc.js';
 import { mapGetters, mapMutations } from "vuex";
 export default {
@@ -218,8 +94,9 @@ export default {
     Skills,
     Certificate,
     Hobbies,
+    mainButton,
   },
-  
+
   methods: {
     openPage(value) {
       this.CHANGE_PAGE_OPEN(value);
@@ -260,6 +137,7 @@ export default {
 .mainBtns:hover {
   background-color: #DBC7BE;
 }
+
 .txt:hover {
   transform: scale(1.4);
   transition: all 0.5s;
@@ -279,13 +157,11 @@ export default {
 }
 
 .animate-charcter:hover {
-  background-image: linear-gradient(
-    -225deg,
-    #dbc7be 0%,
-    #ffffff 29%,
-    #102b3f 67%,
-    #102b3f 100%
-  );
+  background-image: linear-gradient(-225deg,
+      #dbc7be 0%,
+      #ffffff 29%,
+      #102b3f 67%,
+      #102b3f 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -312,6 +188,7 @@ export default {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -322,38 +199,47 @@ export default {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
   }
+
   4% {
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
   }
+
   6% {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
   }
+
   8% {
     -webkit-transform: translateY(3px);
     transform: translateY(3px);
   }
+
   10% {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
   }
+
   12% {
     -webkit-transform: translateY(2px);
     transform: translateY(2px);
   }
+
   14% {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
   }
+
   16% {
     -webkit-transform: translateY(2px);
     transform: translateY(2px);
   }
+
   18% {
     -webkit-transform: translateY(-1px);
     transform: translateY(-1px);
   }
+
   20% {
     -webkit-transform: translateY(1px);
     transform: translateY(1px);
@@ -368,5 +254,4 @@ export default {
   animation: none;
   background-color: #dbc7be;
 }
-
 </style>

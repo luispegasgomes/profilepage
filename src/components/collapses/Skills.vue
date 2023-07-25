@@ -1,7 +1,7 @@
 <template>
   <!--SKILLS-->
   <!--NEW SKILLS PAGE-->
-  <div id="collapse-5" v-show="getPageOpened === 'skill'">
+  <div id="collapse-skill" v-show="getPageOpened === 'skill'">
     <b-card style="background-color: #586F7C">
       <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
 

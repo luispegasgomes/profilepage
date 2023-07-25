@@ -1,5 +1,5 @@
 <template>
-  <div id="collapse-7" v-show="getPageOpened === 'hobbies'">
+  <div id="collapse-hobbie" v-show="getPageOpened === 'hobbies'">
     <b-card style="background-color: #586F7C">
       <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
       <div>
