@@ -34,8 +34,8 @@
 
       <hr class="col-8 mt-4 bgBlack" style="height: 3px" />
 
-      <!--BUTTONS-->
-      <div class="row align-items-center justify-content-center mb-5">
+      <!--BUTTONS THAT CONTROLS THE COLLAPSES-->
+      <div class="col-md-6 col-sm-6 row align-items-center justify-content-center mb-5">
         <div class="col-sm-6 d-flex mt-4">
           <mainButton :collapseName="'about'" :headerName="'About Me'" :collapseNumber="'#collapse-about'"/>
           <mainButton :collapseName="'academic'" :headerName="'Academic'" :collapseNumber="'#collapse-academic'"/>
@@ -47,7 +47,8 @@
           <mainButton :collapseName="'hobbies'" :headerName="'Hobbies'" :collapseNumber="'#collapse-hobbie'"/>
         </div>
       </div>
-      <!--BUTTONS-->
+      <!--BUTTONS THAT CONTROLS THE COLLAPSES-->
+
     </div>
 
     <!-- Call all collapses -->
