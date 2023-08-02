@@ -1,29 +1,23 @@
 <template>
   <div id="collapse-academic" v-show="getPageOpened === 'academic'">
-    <b-card style="background-color: #586F7C">
-      <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
+    <collapseHeader :collapseName="collapseName" :headerName="headerName" />
+    <!-- NEW -->
+    <div class="new col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3">
+      <span style="font-size: 20px;">10/2020 - 07/2023</span>
+      <hr class="col-12 mt-2 mb-3 colorDarkBlue rule" />
+      <div class="test d-md-flex align-items-center ">
+        <img src="../../assets/logo-esmad.png" alt="esmad" width="90" class="mr-md-4 mb-2 mb-md-0">
 
-      <div class="
-            mt-4
-            mx-2
-            fontBarlow
-            colorDarkBlue
-            d-flex
-            flex-column
-            align-items-start
-          " v-for="(info, index) in getAcademics.slice().reverse()" :key="index">
-        <h1 style="font-size: 30px">{{ info.date }}</h1>
-        <hr class="col-5 mt-0 mb-1" style="height: 2px" />
-        <div class="d-flex align-items-center mx-3">
-          <img :src="info.logo" width="50" height="50" />
-          <p class="mt-3 mx-3">
-            <span style="font-weight: bold"> {{ info.title }} <br /> </span>
-            <span class="colorWhite"> {{ info.subtitle }} <br /> </span>
-          </p>
+        <div class="d-flex flex-column m-2">
+          <span style="font-weight: bold; font-size: 20px;" class="fontAsap mb-2">Escola Superior de Media Artes e
+            Design</span>
+          <span style="font-size: 18px;">Degree, Technologies and Information Systems for the Web</span>
         </div>
       </div>
-      <scrollToTop :collapseName="collapseName" />
-    </b-card>
+
+    </div>
+
+    <scrollToTop :collapseName="collapseName" />
   </div>
 </template>
 
@@ -60,61 +54,28 @@ export default {
 </script>
 
 <style scoped>
-.btnBeige {
-  border: none;
-  border-radius: 11px;
-  color: white;
-  height: 50px;
-  width: 50px;
+#collapse-academic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #586F7C;
 }
 
-.mainBtns {
-  border: none;
-  border-radius: 100px;
-  background-color: #102b3f;
-  width: 60px;
-  height: 60px;
+@media (max-width: 767.98px) {
+    /* Devices smaller than md breakpoint (767.98px) */
+    .test {
+      text-align: center !important;
+    }
+  }
+
+.new {
+  display: flex;
+  flex-direction: column;
+  border: solid 6px #123456;
+  background-color: #95ADB6;
+  padding: 10px;
 }
 
-.mainBtns:hover {
-  background-color: #DBC7BE;
-}
-
-.txt:hover {
-  transform: scale(1.4);
-  transition: all 0.5s;
-}
-
-.secondaryBtns {
-  border: none;
-  border-radius: 100px;
-  background-color: #102b3f;
-  width: 60px;
-  height: 60px;
-}
-
-.text {
-  font-size: 25px;
-  text-align: center;
-}
-
-.animate-charcter:hover {
-  background-image: linear-gradient(-225deg,
-      #dbc7be 0%,
-      #ffffff 29%,
-      #102b3f 67%,
-      #102b3f 100%);
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-  font-size: 190px;
-}
 
 @keyframes textclip {
   to {
@@ -122,84 +83,8 @@ export default {
   }
 }
 
-.rotateRim {
-  animation: rotation 2s infinite linear;
+.rule {
+  opacity: 1;
+  height: 2px;
 }
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes wiggle {
-  2% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-
-  4% {
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
-  }
-
-  6% {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-  }
-
-  8% {
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
-  }
-
-  10% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-
-  12% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-
-  14% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-
-  16% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-
-  18% {
-    -webkit-transform: translateY(-1px);
-    transform: translateY(-1px);
-  }
-
-  20% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-}
-
-.hireme {
-  animation: wiggle 2.7s infinite;
-}
-
-.hireme:hover {
-  animation: none;
-  background-color: #dbc7be;
-}
-
-.backtotop {
-  border: none;
-  border-radius: 11px;
-  background-color: #586F7C;
-  animation: wiggle 1.2s infinite;
-}</style>
+</style>
