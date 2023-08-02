@@ -1,20 +1,22 @@
 <template>
   <div id="collapse-academic" v-show="getPageOpened === 'academic'">
-    <collapseHeader :collapseName="collapseName" :headerName="headerName" />
+    <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4"/>
     <!-- NEW -->
-    <div class="new col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3">
-      <span style="font-size: 20px;">10/2020 - 07/2023</span>
+    <div class="new col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-4 mb-4">
+      <div class="d-flex align-items-center">
+        <span style="font-size: 20px; width: 98%;">10/2020 - 07/2023</span>
+        <button class="btnMoreInfoTop"><img src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true" width="100%"></button>
+      </div>
       <hr class="col-12 mt-2 mb-3 colorDarkBlue rule" />
-      <div class="test d-md-flex align-items-center ">
+      <div class="test d-md-flex align-items-center">
         <img src="../../assets/logo-esmad.png" alt="esmad" width="90" class="mr-md-4 mb-2 mb-md-0">
-
-        <div class="d-flex flex-column m-2">
+        <div class="d-flex flex-column m-2" style="width: 100%;">
           <span style="font-weight: bold; font-size: 20px;" class="fontAsap mb-2">Escola Superior de Media Artes e
             Design</span>
           <span style="font-size: 18px;">Degree, Technologies and Information Systems for the Web</span>
         </div>
+        <button class="btnMoreInfoBottom"><img src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true" width="100%"></button>
       </div>
-
     </div>
 
     <scrollToTop :collapseName="collapseName" />
@@ -66,8 +68,33 @@ export default {
     .test {
       text-align: center !important;
     }
+    .btnMoreInfoTop{
+      display: flex;
+    }
+    .btnMoreInfoBottom{
+      display: none;
+    }
+  }
+  @media (min-width: 767.98px) {
+    /* Devices smaller than md breakpoint (767.98px) */
+
+    .btnMoreInfoTop{
+      display: none;
+    }
   }
 
+.btnMoreInfoTop{
+  background-color: #95ADB6;
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+.btnMoreInfoBottom{
+  background-color: #95ADB6;
+  border: none;
+  width: 60px;
+  height: 50px;
+}
 .new {
   display: flex;
   flex-direction: column;
