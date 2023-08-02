@@ -5,9 +5,7 @@
     <div class="academic col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3 mb-3" v-for="(info, index) in getAcademics" :key="index">
       <div class="d-flex align-items-center">
         <span style="font-size: 20px; width: 98%;">{{info.date}}</span>
-        <button class="btnMoreInfoTop"><img
-          :src="iconPath"
-            width="100%"></button>
+        <button class="btnMoreInfoTop"><img :src="getIcon('info')" width="100%"></button>
       </div>
       <hr class="col-12 mt-2 mb-3 colorDarkBlue rule" />
       <div class="content d-md-flex align-items-center">
@@ -16,12 +14,9 @@
           <span style="font-weight: bold; font-size: 20px;" class="fontAsap mb-2">{{info.title}}</span>
           <span style="font-size: 18px;">{{info.subtitle}}</span>
         </div>
-        <button class="btnMoreInfoBottom"><img
-            :src="iconPath"
-            width="100%"></button>
+        <button class="btnMoreInfoBottom"><img :src="getIcon('info')" width="100%"></button>
       </div>
     </div>
-
     <scrollToTop :collapseName="collapseName" />
   </div>
 </template>
@@ -44,12 +39,6 @@ export default {
 
   computed: {
     ...mapGetters(["getAcademics", "getPageOpened"]),
-    logoPath() {
-      return getInstitutionLogo('logo-esmad');
-    },
-    iconPath() {
-      return getIcon('info');
-    },
   },
 
   components: {
@@ -58,6 +47,7 @@ export default {
   },
   methods: {
     getInstitutionLogo,
+    getIcon,
     openPage(value) {
       this.CHANGE_PAGE_OPEN(value);
     },
