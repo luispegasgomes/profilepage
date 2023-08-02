@@ -104,9 +104,10 @@ export default {
     ],
     academics:[],
     academics1:[
-      {date: "2017-2020", logo:"academic/resende.png", subtitle:"Secondary Education, Science and Technology", title:"Escola Secundária de Resende"},
-      {date: "October 2021", logo:"academic/nucleo.png", subtitle:"English Course B2.2", title:"Formação, Consultoria e Línguas"},
-      {date: "2020-2023", logo:"academic/pporto.png", subtitle:"Degree in Technologies and Information Systems for the Web", title:"Instituto Politécnico do Porto - ESMAD"},
+      {date: "10/2020 - 07/2023", logo:"logo-esmad", subtitle:"Degree, Technologies and Information Systems for the Web", title:"Escola Superior de Media Artes e Design"},
+      {date: "October 2021", logo:"núcleofcl", subtitle:"English Course B2.2", title:"Formação, Consultoria e Línguas"},
+      {date: "2017 - 2020", logo:"aeresende", subtitle:"Secondary Education, Science and Technology", title:"Escola Secundária de Resende"},
+
     ],
     oneProject: [],
     programming: [], 

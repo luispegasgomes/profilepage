@@ -2,23 +2,22 @@
   <div id="collapse-academic" v-show="getPageOpened === 'academic'">
     <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4" />
     <!-- NEW -->
-    <div class="academic col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-4 mb-4">
+    <div class="academic col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3 mb-3" v-for="(info, index) in getAcademics" :key="index">
       <div class="d-flex align-items-center">
-        <span style="font-size: 20px; width: 98%;">10/2020 - 07/2023</span>
+        <span style="font-size: 20px; width: 98%;">{{info.date}}</span>
         <button class="btnMoreInfoTop"><img
-            src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true"
+          :src="iconPath"
             width="100%"></button>
       </div>
       <hr class="col-12 mt-2 mb-3 colorDarkBlue rule" />
       <div class="content d-md-flex align-items-center">
-        <img src="../../assets/logo-esmad.png" alt="esmad" width="90" class="mr-md-4 mb-2 mb-md-0">
+        <img :src="getInstitutionLogo(info.logo)" alt="esmad" width="80" class="mr-md-4 mb-2 mb-md-0">
         <div class="d-flex flex-column textInfo" style="width: 100%;">
-          <span style="font-weight: bold; font-size: 20px;" class="fontAsap mb-2">Escola Superior de Media Artes e
-            Design</span>
-          <span style="font-size: 18px;">Degree, Technologies and Information Systems for the Web</span>
+          <span style="font-weight: bold; font-size: 20px;" class="fontAsap mb-2">{{info.title}}</span>
+          <span style="font-size: 18px;">{{info.subtitle}}</span>
         </div>
         <button class="btnMoreInfoBottom"><img
-            src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true"
+            :src="iconPath"
             width="100%"></button>
       </div>
     </div>
@@ -32,6 +31,7 @@
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
 import collapseHeader from "../parts/collapse-header.vue"
+import { getInstitutionLogo, getIcon } from "../../helpers/getImgSrc";
 
 export default {
   name: "Academic",
@@ -44,6 +44,12 @@ export default {
 
   computed: {
     ...mapGetters(["getAcademics", "getPageOpened"]),
+    logoPath() {
+      return getInstitutionLogo('logo-esmad');
+    },
+    iconPath() {
+      return getIcon('info');
+    },
   },
 
   components: {
@@ -51,6 +57,7 @@ export default {
     collapseHeader
   },
   methods: {
+    getInstitutionLogo,
     openPage(value) {
       this.CHANGE_PAGE_OPEN(value);
     },
@@ -60,6 +67,7 @@ export default {
 </script>
 
 <style scoped>
+
 #collapse-academic {
   display: flex;
   flex-direction: column;
@@ -94,7 +102,6 @@ export default {
 }
 
 @media (max-width: 767.98px) {
-
   /* Devices smaller than md breakpoint (767.98px) */
   .content {
     text-align: center !important;
@@ -106,10 +113,10 @@ export default {
 }
 
 @media (min-width: 767.98px) {
-
   /* Devices greater than md breakpoint (767.98px) */
   .textInfo {
     margin: 10px;
+    margin-left: 20px;
   }
 
   .btnMoreInfoTop {
