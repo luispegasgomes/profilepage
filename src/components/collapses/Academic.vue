@@ -1,21 +1,25 @@
 <template>
   <div id="collapse-academic" v-show="getPageOpened === 'academic'">
-    <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4"/>
+    <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4" />
     <!-- NEW -->
-    <div class="new col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-4 mb-4">
+    <div class="academic col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-4 mb-4">
       <div class="d-flex align-items-center">
         <span style="font-size: 20px; width: 98%;">10/2020 - 07/2023</span>
-        <button class="btnMoreInfoTop"><img src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true" width="100%"></button>
+        <button class="btnMoreInfoTop"><img
+            src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true"
+            width="100%"></button>
       </div>
       <hr class="col-12 mt-2 mb-3 colorDarkBlue rule" />
-      <div class="test d-md-flex align-items-center">
+      <div class="content d-md-flex align-items-center">
         <img src="../../assets/logo-esmad.png" alt="esmad" width="90" class="mr-md-4 mb-2 mb-md-0">
-        <div class="d-flex flex-column m-2" style="width: 100%;">
+        <div class="d-flex flex-column textInfo" style="width: 100%;">
           <span style="font-weight: bold; font-size: 20px;" class="fontAsap mb-2">Escola Superior de Media Artes e
             Design</span>
           <span style="font-size: 18px;">Degree, Technologies and Information Systems for the Web</span>
         </div>
-        <button class="btnMoreInfoBottom"><img src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true" width="100%"></button>
+        <button class="btnMoreInfoBottom"><img
+            src="https://github.com/luispegasgomes/images/blob/main/profilepage/icons/info.png?raw=true"
+            width="100%"></button>
       </div>
     </div>
 
@@ -63,39 +67,25 @@ export default {
   background-color: #586F7C;
 }
 
-@media (max-width: 767.98px) {
-    /* Devices smaller than md breakpoint (767.98px) */
-    .test {
-      text-align: center !important;
-    }
-    .btnMoreInfoTop{
-      display: flex;
-    }
-    .btnMoreInfoBottom{
-      display: none;
-    }
-  }
-  @media (min-width: 767.98px) {
-    /* Devices smaller than md breakpoint (767.98px) */
-
-    .btnMoreInfoTop{
-      display: none;
-    }
-  }
-
-.btnMoreInfoTop{
+.rule {
+  opacity: 1;
+  height: 2px;
+}
+.btnMoreInfoTop {
   background-color: #95ADB6;
   border: none;
   width: 35px;
   height: 35px;
 }
-.btnMoreInfoBottom{
+
+.btnMoreInfoBottom {
   background-color: #95ADB6;
   border: none;
   width: 60px;
   height: 50px;
 }
-.new {
+
+.academic {
   display: flex;
   flex-direction: column;
   border: solid 6px #123456;
@@ -103,15 +93,33 @@ export default {
   padding: 10px;
 }
 
+@media (max-width: 767.98px) {
+
+  /* Devices smaller than md breakpoint (767.98px) */
+  .content {
+    text-align: center !important;
+  }
+
+  .btnMoreInfoBottom {
+    display: none;
+  }
+}
+
+@media (min-width: 767.98px) {
+
+  /* Devices greater than md breakpoint (767.98px) */
+  .textInfo {
+    margin: 10px;
+  }
+
+  .btnMoreInfoTop {
+    display: none;
+  }
+}
 
 @keyframes textclip {
   to {
     background-position: 200% center;
   }
-}
-
-.rule {
-  opacity: 1;
-  height: 2px;
 }
 </style>
