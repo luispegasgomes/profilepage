@@ -5,7 +5,7 @@
     <div class="academic col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3 mb-3" v-for="(info, index) in getAcademics" :key="index">
       <div class="d-flex align-items-center">
         <span style="font-size: 20px; width: 98%;">{{info.date}}</span>
-        <button class="btnMoreInfoTop" @click="openModal"><img :src="getIcon('info')" width="100%"></button>
+        <button class="btnMoreInfoTop" @click="openModal(info.logo)"><img :src="getIcon('info')" width="100%"></button>
       </div>
       <hr class="col-12 mt-2 mb-3 colorDarkBlue rule" />
       <div class="content d-md-flex align-items-center">

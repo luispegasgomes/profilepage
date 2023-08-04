@@ -6,7 +6,7 @@
             <div class="d-flex flex-column align-items-center m-2">
                 <img :src="getInstitutionLogo(academicInfo.logo)" width="90" class="m-2">
                 <span class="colorBlue fontAsap m-2">{{ academicInfo.title }}</span>
-                <span class="colorWhite m-2">{{ academicInfo.subtitle }}</span>
+                <span class="colorWhite m-2 text-center">{{ academicInfo.subtitle }}</span>
                 <span class="colorWhite m-2 mb-4">Final average grade : {{ academicInfo.average }} values</span>
                 <b-card no-body class="col-11 cardSkills bgBlue">
                     <span class="p-2 bgBlue fontAsap text-center">Acquired Skills</span>
