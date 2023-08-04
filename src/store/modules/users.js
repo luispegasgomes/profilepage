@@ -125,7 +125,7 @@ export default {
             { text: 'SWG-709D04', name: 'swagger', color: 'FFFFFF' },
         ],
     },
-      {date: "October 2021", logo:"núcleofcl", subtitle:"English Course B2.2", title:"Formação, Consultoria e Línguas", average: "17",},
+      {date: "October 2021", logo:"fcl", subtitle:"English Course B2.2", title:"Formação, Consultoria e Línguas", average: "17",},
       {date: "2017 - 2020", logo:"aeresende", subtitle:"Secondary Education, Science and Technology", title:"Escola Secundária de Resende", average: "14,1"},
 
 
