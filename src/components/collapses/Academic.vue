@@ -47,7 +47,7 @@ export default {
   components: {
     scrollToTop,
     collapseHeader,
-    Modal
+    Modal,
   },
   methods: {
     getInstitutionLogo,

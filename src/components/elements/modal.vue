@@ -33,9 +33,10 @@ export default {
     data() {
         return {
             show: false,
-            academicInfo:{}
+            academicInfo: {},
         };
     },
+
 
     computed: {
         ...mapGetters(["getAcademic"]),
