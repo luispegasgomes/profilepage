@@ -49,6 +49,6 @@ export default {
 }
 
 .mainBtns:hover {
-    background-color: #DBC7BE;
+    background-color: #282828;
 }
 </style>

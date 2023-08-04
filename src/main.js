@@ -38,6 +38,9 @@ Vue.use(SidebarPlugin)
 // PROGRESS
 import { ProgressPlugin } from 'bootstrap-vue'
 Vue.use(ProgressPlugin)
+// TABS
+import { TabsPlugin } from 'bootstrap-vue'
+Vue.use(TabsPlugin)
 
 Vue.config.productionTip = false;
 

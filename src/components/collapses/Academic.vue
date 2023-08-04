@@ -5,7 +5,7 @@
     <div class="academic col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3 mb-3" v-for="(info, index) in getAcademics" :key="index">
       <div class="d-flex align-items-center">
         <span style="font-size: 20px; width: 98%;">{{info.date}}</span>
-        <button class="btnMoreInfoTop"><img :src="getIcon('info')" width="100%"></button>
+        <button class="btnMoreInfoTop" @click="openModal"><img :src="getIcon('info')" width="100%"></button>
       </div>
       <hr class="col-12 mt-2 mb-3 colorDarkBlue rule" />
       <div class="content d-md-flex align-items-center">
@@ -14,9 +14,10 @@
           <span style="font-weight: bold; font-size: 20px;" class="fontAsap mb-2">{{info.title}}</span>
           <span style="font-size: 18px;">{{info.subtitle}}</span>
         </div>
-        <button class="btnMoreInfoBottom"><img :src="getIcon('info')" width="100%"></button>
+        <button class="btnMoreInfoBottom" @click="openModal(info.logo)"><img :src="getIcon('info')" width="100%"></button>
       </div>
     </div>
+    <Modal ref="myModal" :course="collapseName"/>
     <scrollToTop :collapseName="collapseName" />
   </div>
 </template>
@@ -26,6 +27,7 @@
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
 import collapseHeader from "../parts/collapse-header.vue"
+import Modal from "../elements/modal.vue"
 import { getInstitutionLogo, getIcon } from "../../helpers/getImgSrc";
 
 export default {
@@ -33,7 +35,8 @@ export default {
   data() {
     return {
       collapseName: 'academic',
-      headerName: 'Academic'
+      headerName: 'Academic',
+      showModal: false,
     };
   },
 
@@ -43,13 +46,20 @@ export default {
 
   components: {
     scrollToTop,
-    collapseHeader
+    collapseHeader,
+    Modal
   },
   methods: {
     getInstitutionLogo,
     getIcon,
     openPage(value) {
       this.CHANGE_PAGE_OPEN(value);
+    },
+    openModal(logo) {
+      this.$refs.myModal.showModal(logo);
+    },
+    closeModal() {
+      this.$refs.myModal.hideModal();
     },
     ...mapMutations(["CHANGE_PAGE_OPEN"]),
   },

@@ -39,10 +39,10 @@
         <div class="col-sm-6 d-flex mt-4">
           <mainButton :collapseName="'about'" :headerName="'About Me'" :collapseNumber="'#collapse-about'"/>
           <mainButton :collapseName="'academic'" :headerName="'Academic'" :collapseNumber="'#collapse-academic'"/>
-          <mainButton :collapseName="'project'" :headerName="'Projects'" :collapseNumber="'#collapse-project'"/>
+          <mainButton :collapseName="'skill'" :headerName="'Skills'" :collapseNumber="'#collapse-skill'"/>
         </div>
         <div class="col-sm-6 d-flex mt-4">
-          <mainButton :collapseName="'skill'" :headerName="'Skills'" :collapseNumber="'#collapse-skill'"/>
+          <mainButton :collapseName="'project'" :headerName="'Projects'" :collapseNumber="'#collapse-project'"/>
           <mainButton :collapseName="'certificate'" :headerName="'Certificates'" :collapseNumber="'#collapse-certificate'"/>
           <mainButton :collapseName="'hobbies'" :headerName="'Hobbies'" :collapseNumber="'#collapse-hobbie'"/>
         </div>
