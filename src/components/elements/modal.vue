@@ -8,7 +8,8 @@
                 <span class="colorBlue fontAsap m-2">{{ academicInfo.title }}</span>
                 <span class="colorWhite m-2 text-center">{{ academicInfo.subtitle }}</span>
                 <span class="colorWhite m-2 mb-4">Final average grade : {{ academicInfo.average }} values</span>
-                <b-card no-body class="col-11 cardSkills bgBlue">
+
+                <b-card no-body class="col-11 mb-4 cardSkills bgBlue" v-if="academicInfo.skills">
                     <span class="p-2 bgBlue fontAsap text-center">Acquired Skills</span>
                     <div class="container colorWhite justify-content-center mb-2">
                         <img class="m-2" style="border-radius: 4px; height: 30px; width: 20%;"
@@ -18,7 +19,7 @@
 
                 </b-card>
 
-                <b-button class="mt-3" variant="danger" @click="hideModal">Close</b-button>
+                <b-button variant="danger" @click="hideModal">Close</b-button>
             </div>
         </b-modal>
     </div>
