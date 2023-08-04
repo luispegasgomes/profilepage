@@ -18,8 +18,7 @@
                     </div>
 
                 </b-card>
-
-                <b-button variant="danger" @click="hideModal">Close</b-button>
+                <img :src="getIcon('close')" width="10%" @click="hideModal" style="cursor: pointer;">
             </div>
         </b-modal>
     </div>
@@ -28,7 +27,7 @@
 <script>
 
 import { mapGetters } from "vuex";
-import { getInstitutionLogo, getSkillIcon } from '../../helpers/getImgSrc';
+import { getInstitutionLogo, getSkillIcon, getIcon } from '../../helpers/getImgSrc';
 
 export default {
     data() {
@@ -45,7 +44,7 @@ export default {
     methods: {
         getInstitutionLogo,
         getSkillIcon,
-
+        getIcon,
         showModal(value) {
             this.show = true;
             this.academicInfo = this.getAcademic(value)
