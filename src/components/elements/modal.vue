@@ -4,7 +4,9 @@
             body-bg-variant="dark">
             <!-- Modal Body -->
             <div class="d-flex flex-column align-items-center m-2">
-                <img :src="getInstitutionLogo(academicInfo.logo)" width="90" class="m-2">
+                <span style="font-size: 20px; width: 100%;" class="colorBlue">{{academicInfo.date}}</span>
+                <hr class="col-12 mt-2 mb-3 colorBlue rule" />
+                <img :src="getInstitutionLogo(academicInfo.logo)" width="100" class="m-2">
                 <span class="colorBlue fontAsap m-2">{{ academicInfo.title }}</span>
                 <span class="colorWhite m-2 text-center">{{ academicInfo.subtitle }}</span>
                 <span class="colorWhite m-2 mb-4">Final average grade : {{ academicInfo.average }} values</span>
@@ -62,6 +64,11 @@ export default {
 </script>
 
 <style scoped>
+
+.rule {
+  opacity: 1;
+  height: 2px;
+}
 .cardSkills {
     background-color: #95ADB6;
     border: solid 6px #586F7C;
