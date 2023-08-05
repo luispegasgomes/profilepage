@@ -3,7 +3,7 @@
     <b-card style="background-color: #586F7C">
       <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
       <div class="d-flex flex-column align-items-center mt-5 mb-5">
-        <img src="../../assets/work-in-progress.png" width="20%">
+        <img src="../../assets/work-in-progress.png" width="200px">
 
       </div>
       <scrollToTop :collapseName="collapseName" />
