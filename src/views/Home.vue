@@ -39,7 +39,7 @@
         <div class="col-sm-6 d-flex mt-4">
           <mainButton :collapseName="'about'" :headerName="'About Me'" :collapseNumber="'#collapse-about'"/>
           <mainButton :collapseName="'academic'" :headerName="'Academic'" :collapseNumber="'#collapse-academic'"/>
-          <mainButton :collapseName="'skill'" :headerName="'Skills'" :collapseNumber="'#collapse-skill'"/>
+          <mainButton :collapseName="'work'" :headerName="'Work'" :collapseNumber="'#collapse-work'"/>
         </div>
         <div class="col-sm-6 d-flex mt-4">
           <mainButton :collapseName="'project'" :headerName="'Projects'" :collapseNumber="'#collapse-project'"/>
@@ -72,7 +72,7 @@
 import About from '../components/collapses/About'
 import Academic from "../components/collapses/Academic.vue"
 import Projects from "../components/collapses/Projects.vue";
-import Skills from "../components/collapses/Skills.vue";
+import Skills from "../components/collapses/Work.vue";
 import Certificate from "../components/collapses/Certificate.vue";
 import Hobbies from "../components/collapses/Hobbies.vue";
 
