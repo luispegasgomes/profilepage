@@ -11,7 +11,7 @@
                 <span class="colorWhite m-2 text-center">{{ academicInfo.subtitle }}</span>
                 <span class="colorWhite m-2 mb-4">Final average grade : {{ academicInfo.average }} values</span>
 
-                <b-card no-body class="col-11 mb-4 cardSkills bgBlue" v-if="academicInfo.skills">
+                <b-card no-body class="col-11 col-xl-10 mb-4 cardSkills bgBlue" v-if="academicInfo.skills">
                     <span class="p-2 bgBlue fontAsap text-center" style="font-size: 1.2rem;">Acquired Skills</span>
                     <div class="container colorWhite justify-content-center mb-2">
                         <img class="m-2" style="border-radius: 4px; height: 30px; width: 80px;"
