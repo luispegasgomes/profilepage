@@ -4,7 +4,7 @@
             <img :src="getIconPath(collapseName)" width="30" height="30" />
         </button>
 
-        <p class="colorDarkBlue fontAsap">{{headerName}}</p>
+        <span class="fontAsap">{{headerName}}</span>
     </div>
 </template>
 
@@ -35,9 +35,13 @@ export default {
 </script>
 
 <style scoped>
+.txt{
+    color: #102b3f;
+}
 .txt:hover {
     transform: scale(1.4);
     transition: all 0.5s;
+    color: #333;
 }
 
 .mainBtns {

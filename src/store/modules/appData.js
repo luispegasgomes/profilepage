@@ -1,13 +1,12 @@
 export default {
   state: {
     hobbies: [
-      { date: "14/07/2021", img: "car/driving.jpeg", title: "Just driving" },
-      { date: "08/07/2022", img: "car/piscas.png", title: "New blinkers!" },
-      { date: "31/08/2022", img: "car/rim.jpeg", title: "Rim cleaning..." },
-      { date: "08/10/2022", img: "car/October 8.jpeg", title: "Tire shining" },
-      { date: "02/02/2023", img: "car/manutencao.jpeg", title: "Clio maintenance" },
-      { date: "04/02/2023", img: "car/f40.png", title: "New machine!" },
-
+      { date: "16/02/2020", img: "car/santafe.jpeg", title: "Quinta da Touça" },
+      { date: "14/07/2021", img: "car/driving.jpeg", title: "A4, Campo" },
+      { date: "11/12/2021", img: "car/motorclio.jpeg", title: "Santa Marinha Zêzere" },
+      { date: "06/11/2022", img: "car/clios.png", title: "Santa Marinha Zêzere" },
+      { date: "13/01/2023", img: "car/trasbmw.png", title: "Paredes, Porto" },
+      { date: "18/02/2023", img: "car/douro.jpg", title: "Douro river, Baião" },
     ],
     projects: [
       {

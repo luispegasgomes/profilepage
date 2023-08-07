@@ -1,12 +1,15 @@
 <template>
   <div id="collapse-hobbie" v-show="getPageOpened === 'hobbies'">
     <b-card style="background-color: #586F7C">
-      <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
+      <collapseHeader :collapseName="collapseName" :headerName="headerName" />
       <div>
         <div class="d-flex flex-column align-items-center justify-content-center mt-4">
           <div class="mt-2">
             <button class="mx-3 secondaryBtns" v-on:click="showCarFunc()" v-scroll-to="'#cars1'">
               <img src="../../assets/icons/car.png" width="30" height="30" />
+            </button>
+            <button class="mx-3 secondaryBtns" >
+              <img src="../../assets/icons/family.png" width="30" height="30" />
             </button>
             <button class="mx-3 secondaryBtns" v-on:click="showFootballFunc()">
               <img src="../../assets/icons/football.png" width="30" height="30" />
@@ -19,14 +22,14 @@
           justify-content-center
           mt-3
         " id="cars1" v-if="showCar">
-            <p class="col-8 mt-3 colorWhite" style="text-align: center">
+            <p class="col-6 mt-3 colorWhite" style="text-align: center">
               In addition to enjoying programming, one of my passions is also the
               automobile culture, I am a car enthusiast, I really like to drive and
               take good care of my car and I like when someone asks me to take a
               look at their car.
             </p>
 
-            <div class="cars mt-3">
+            <div class="cars">
               <div class="
               d-flex
               flex-column
@@ -35,10 +38,12 @@
               mt-3
             "></div>
               <!--CAR POST-->
-              <div class="postBox mt-2 mx-3" v-for="(info, index) in getHobbies.slice().reverse()" :key="index">
-                <p style="text-align: start" class="mx-3 mt-2 fontBarlow">
-                  {{ info.title }}
-                </p>
+              <div class="postBox m-3" v-for="(info, index) in getHobbies.slice().reverse()" :key="index">
+                <div class="d-flex align-items-center m-2">
+                  <img src="../../assets/icons/location.png" width="20" height="20">
+                  <span class="fontBarlow" style="margin-left: 0.2rem; font-size: 15px;">{{ info.title }}</span>
+                </div>
+
                 <div class="
                 d-flex
                 flex-column
@@ -46,7 +51,7 @@
                 justify-content-center
                 mt-2
               ">
-                  <img :src="info.img" width="200" height="200" />
+                  <img :src="info.img" width="266" height="200" style="border: solid 2px #102b3f;" />
                 </div>
                 <p class="mt-2 mx-3 fontBarlow" style="text-align: end">
                   {{ info.date }}
@@ -163,7 +168,7 @@ export default {
 
 .postBox {
   border: solid 6px #102b3f;
-  background-color: white;
+  background-color: #95ADB6;
   width: 360px;
   height: 285px;
   font-weight: bold;
@@ -175,6 +180,7 @@ export default {
   justify-content: center;
   width: 80%;
 }
+
 .secondaryBtns {
   border: none;
   border-radius: 100px;
