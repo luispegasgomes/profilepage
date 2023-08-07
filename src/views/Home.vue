@@ -4,7 +4,7 @@
       <h1 class="fontAsap colorDarkBlue animate-charcter mt-4"
         style="font-weight: bold; font-size: 7vh; text-align: center; height: 12vh" id="luis">
         <span style="color: #faf9f6">I'm</span>
-        Luís G<img class="rotateRim" src="../assets/wheel.png" width="32px" />mes
+        Luís G<img class="rotateRim" src="../assets/icons/wheel.png" width="32px" />mes
       </h1>
       <p class="fontBarlow colorDarkBlue" style="text-align: center; font-size: 3vh; height: 12vh">
         Software Developer<br />
@@ -16,18 +16,18 @@
       <div class="d-flex align-items-center justify-content-center mb-2" style="height: 14vh">
         <a href="https://github.com/luispegasgomes">
           <button class="mx-3 bgBeige btnBeige">
-            <img src="../assets/github.png" width="30" />
+            <img src="../assets/icons/github.png" width="30" />
           </button>
         </a>
         <a href="mailto:luispegasgomes@gmail.com">
           <button class="mx-3 bgDarkBlue btnBeige fontBarlow hireme" style="width: 150px">
-            <img src="../assets/hiring.png" width="30" />
+            <img src="../assets/icons/hiring.png" width="30" />
             <span class="mx-3 colorWhite">Hire me!</span>
           </button>
         </a>
         <a href="https://www.linkedin.com/in/lu%C3%ADs-gomes-969531207/">
           <button class="mx-3 bgBeige btnBeige">
-            <img src="../assets/linkedin.png" width="30" />
+            <img src="../assets/icons/linkedin.png" width="30" />
           </button>
         </a>
       </div>
@@ -113,7 +113,7 @@ export default {
 <style scoped>
 .home {
   height: 100vh;
-  background-image: url("../assets/testeback.png");
+  background-image: url("../assets/bg_road.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;

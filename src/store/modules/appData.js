@@ -13,7 +13,7 @@ export default {
       {
         date: "11/2020 - 01/2021",
         description: "The Auto Conde application consists of a site for selling car parts, this project has a very basic js language and is a basic and not consistent application.",
-        logo: "autoconde.png",
+        logo: "projects/autoconde.png",
         name: "Auto Conde",
         promo: "pages/ac.PNG",
         subtitle: "TW Project | Group 7 | TSIW 1st Year",
@@ -24,7 +24,7 @@ export default {
       {
         date: "11/2020 - 01/2021",
         description: "The recipe manager application allows you to manage recipes, create new ones, add to favorites, manage categories, like and comment. It is a basic python application.",
-        logo: "recipe.png",
+        logo: "projects/recipe.png",
         name: "Recipe Manager",
         promo: "pages/rm.png",
         subtitle: "AED Project | Group 2 | TSIW 1st Year",
@@ -35,7 +35,7 @@ export default {
       {
         date: "03/2021 - 06/2021",
         description: "Entertainment for children in confinement during the pandemic, and aimed to amuse and inform them about this new disease, also has several gamification elements, such as achievements and a leaderboard.",
-        logo: "ativon.png",
+        logo: "projects/ativon.png",
         name: "AtivOn",
         promo: "pages/ativon.png",
         subtitle: "Project 1 | Group 1 | TSIW 1st Year",
@@ -46,7 +46,7 @@ export default {
       {
         date: "11/2021 - 12/2021",
         description: "Is the recreation of the nostalgic game of asteroids, with some simplifications in order to make the game simpler and more didactic.",
-        logo: "ast.png",
+        logo: "projects/ast.png",
         name: "Asteroids",
         promo: "pages/asteroids.png",
         subtitle: "CG Project | Group 10 | TSIW 2nd Year",
@@ -57,7 +57,7 @@ export default {
       {
         date: "10/2021 - 06/2022",
         description: "The AutMe application consists of entertainment for children with autism and allows the tutor and psychologist to track the child's progress and communicate with each other.",
-        logo: "autme.png",
+        logo: "projects/autme.png",
         name: "AutMe",
         promo: "pages/autme.png",
         subtitle: "Project 2 | Group 1 | TSIW 2nd Year",
@@ -68,7 +68,7 @@ export default {
       {
         date: "07/2022 - 09/2022",
         description: "This is my personal information page, which contains information about me, my projects, academic background, my skills, certificates and my personal interests.",
-        logo: "icoproject.png",
+        logo: "projects/icon.png",
         name: "Profile Page",
         promo: "pages/lg.png",
         subtitle: "Personal Project",
@@ -79,7 +79,7 @@ export default {
       {
         date: "11/2022 - 12/2022",
         description: "This is a website that I developed as part of the TW | TSIW | ESMAD, which I decided to repeat to improve the grade, is an e-commerce store that sells sports parts for the BMW brand.",
-        logo: "bmw m.png",
+        logo: "projects/bmw m.png",
         name: "M Parts",
         promo: "pages/bmw m.jpg",
         subtitle: "Personal Project | TW | TSIW",
@@ -90,7 +90,7 @@ export default {
       {
         date: "10/2022 - 01/2023",
         description: "The creation of an app that extends LIDEL's physical books through complementary gamified exercises.",
-        logo: "gamibook.png",
+        logo: "projects/gamibook.png",
         name: "Gamibook",
         promo: "pages/gamibook.png",
         subtitle: "ESMAPP | Group 6 | TSIW 3rd Year",

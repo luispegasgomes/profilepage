@@ -12,7 +12,7 @@
             align-items-center
           "
         >
-          <img src="../../assets/curriculo.png" width="50px" class="mt-4" />
+          <img src="../../assets/about/curriculo.png" width="50px" class="mt-4" />
           <p class="text col-10 mt-3">
             I love programming because I really like to understand how things
             are built, this whole process of construction from protyping to the
@@ -26,17 +26,17 @@
             ways of thinking.
           </p>
 
-          <img src="../../assets/mail.png" width="50px" class="mt-5" />
+          <img src="../../assets/about/mail.png" width="50px" class="mt-5" />
           <p class="text mt-3">luispegasgomes@gmail.com</p>
 
-          <img src="../../assets/book.png" width="50px" class="mt-5" />
+          <img src="../../assets/about/book.png" width="50px" class="mt-5" />
           <p class="text mt-3">
             Technologies and Information Systems for the Web <br />
             ESMAD | Escola Superior de Media Artes e Design
           </p>
-          <img src="../../assets/casa.png" width="50px" class="mt-5" />
+          <img src="../../assets/about/casa.png" width="50px" class="mt-5" />
           <p class="text mt-3">Santa Marinha do Zêzere, Baião</p>
-          <img src="../../assets/birth.png" width="50px" class="mt-5" />
+          <img src="../../assets/about/birth.png" width="50px" class="mt-5" />
           <p class="text mt-3">September 15, 2002</p>
 
           <scrollToTop :collapseName="collapseName"/>

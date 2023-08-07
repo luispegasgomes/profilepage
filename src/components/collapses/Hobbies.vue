@@ -6,10 +6,10 @@
         <div class="d-flex flex-column align-items-center justify-content-center mt-4">
           <div class="mt-2">
             <button class="mx-3 secondaryBtns" v-on:click="showCarFunc()" v-scroll-to="'#cars1'">
-              <img src="../../assets/car.png" width="30" height="30" />
+              <img src="../../assets/icons/car.png" width="30" height="30" />
             </button>
             <button class="mx-3 secondaryBtns" v-on:click="showFootballFunc()">
-              <img src="../../assets/football.png" width="30" height="30" />
+              <img src="../../assets/icons/football.png" width="30" height="30" />
             </button>
           </div>
           <div class="

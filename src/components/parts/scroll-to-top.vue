@@ -4,7 +4,7 @@
             class="d-flex flex-column align-items-center backtotop mt-3"
             v-on:click="openPage(collapseName)"
           >
-            <img width="40" src="../../assets/up.png" alt="Back to top!" />
+            <img width="40" src="../../assets/icons/up.png" alt="Back to top!" />
             <span class="mt-2 colorDarkBlue">Back to top!</span>
           </button>
     </div>

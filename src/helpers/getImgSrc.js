@@ -1,6 +1,5 @@
 const githubSrc = 'https://github.com/luispegasgomes/images/blob/main/profilepage'
 const final = 'png?raw=true'
-// const test = 'React_Native-20232A'
 
 export function getIcon(name) {
     return `${githubSrc}/icons/${name}.${final}`;
