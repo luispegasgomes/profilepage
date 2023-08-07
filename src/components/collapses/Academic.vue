@@ -17,7 +17,7 @@
         <button class="btnMoreInfoBottom" @click="openModal(info.logo)"><img :src="getIcon('info')" width="100%"></button>
       </div>
     </div>
-    <Modal ref="myModal" :course="collapseName"/>
+    <Modal ref="modalAcademic" :course="collapseName"/>
     <scrollToTop :collapseName="collapseName" />
   </div>
 </template>
@@ -27,7 +27,7 @@
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
 import collapseHeader from "../parts/collapse-header.vue"
-import Modal from "../elements/modal.vue"
+import Modal from "../modals/modal-academic.vue";
 import { getInstitutionLogo, getIcon } from "../../helpers/getImgSrc";
 
 export default {
@@ -56,10 +56,10 @@ export default {
       this.CHANGE_PAGE_OPEN(value);
     },
     openModal(logo) {
-      this.$refs.myModal.showModal(logo);
+      this.$refs.modalAcademic.showModal(logo);
     },
     closeModal() {
-      this.$refs.myModal.hideModal();
+      this.$refs.modalAcademic.hideModal();
     },
     ...mapMutations(["CHANGE_PAGE_OPEN"]),
   },
