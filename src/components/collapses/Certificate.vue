@@ -5,7 +5,7 @@
       <collapseHeader :collapseName="collapseName" :headerName="headerName"/>
       <div class="row justify-content-center">
         <div class="certificateBox mt-4 mb-3 mx-4 d-flex align-items-center justify-content-center"
-          v-for="(info, index) in getExtra" :key="index">
+          v-for="(info, index) in getCertificates" :key="index">
           <img :src="getCertificateImage(info.image)" width="380" height="250">
         </div>
       </div>
@@ -36,7 +36,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(["getProgramming", "getExtra", "getPageOpened"]),
+    ...mapGetters(["getCertificates", "getPageOpened"]),
   },
 
   methods: {

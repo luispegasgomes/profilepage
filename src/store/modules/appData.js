@@ -1,7 +1,6 @@
 export default {
   state: {
-    hobbies: [],
-    hobbies1: [
+    hobbies: [
       { date: "14/07/2021", img: "car/driving.jpeg", title: "Just driving" },
       { date: "08/07/2022", img: "car/piscas.png", title: "New blinkers!" },
       { date: "31/08/2022", img: "car/rim.jpeg", title: "Rim cleaning..." },
@@ -10,8 +9,7 @@ export default {
       { date: "04/02/2023", img: "car/f40.png", title: "New machine!" },
 
     ],
-    projects: [],
-    projects1: [
+    projects: [
       {
         date: "11/2020 - 01/2021",
         description: "The Auto Conde application consists of a site for selling car parts, this project has a very basic js language and is a basic and not consistent application.",
@@ -102,8 +100,7 @@ export default {
       },
 
     ],
-    academics: [],
-    academics1: [
+    academics: [
       {
         date: "10/2020 - 07/2023",
         logo: "esmad2",
@@ -130,42 +127,12 @@ export default {
 
 
     ],
-    oneProject: [],
-    programming: [],
-    extra: [],
-    programming1: [
-      { date: "11/2021", download: "ola.pdf", logo: "certificates/fgpe.png", see: "ole.png", subtitle: "Programming Learning Environment", title: "FGPE" },
-      { date: "10/2021", download: "ola.pdf", logo: "certificates/codeweek.png", see: "ole.png", subtitle: "JuezLTI", title: "CodeWeek" },
-    ],
     certificates: [
       { date: "08/2022", image: "freecodecamp", subtitle: "Graphical presentation utility", title: "Campus Digital" },
       { date: "10/2021", image: "cursoingles", subtitle: "English Course B2.2", title: "Núcleo FCL" },
       { date: "10/2021", image: "codeweek", subtitle: "English Course B2.2", title: "Núcleo FCL" },
       { date: "10/2021", image: "fgpe", subtitle: "English Course B2.2", title: "Núcleo FCL" },
 
-    ],
-    skillsFE: [
-      { title: "HTML", porcentage: 95, logo: "/icons/html.png" },
-      { title: "CSS", porcentage: 75, logo: "/icons/css.png" },
-      { title: "JS", porcentage: 90, logo: "/icons/js.png" },
-      { title: "VueJS", porcentage: 95, logo: "/icons/vue.png" },
-      { title: "ReactJS", porcentage: 75, logo: "/icons/react.png" },
-      { title: "React Native", porcentage: 80, logo: "/icons/react.png" },
-    ],
-    skillsBE: [
-      { title: "Python", porcentage: 65, logo: "/icons/python.png" },
-      { title: "NodeJS", porcentage: 85, logo: "/icons/node1.png" },
-      { title: "MySQL & Sequelize", porcentage: 85, logo: "/icons/sequelize.png" },
-      { title: "MongoDB & Mongoose", porcentage: 85, logo: "/icons/mongo.png" },
-      { title: "GraphQL", porcentage: 45, logo: "/icons/graph.png" },
-    ],
-    others: [
-      { title: "Git Hub", porcentage: 90, logo: "/icons/gh.png" },
-      { title: "Selenium | JEST", porcentage: 80, logo: "/icons/selenium.png" },
-      { title: "Adobe XD", porcentage: 80, logo: "/icons/xd.png" },
-      { title: "Figma", porcentage: 90, logo: "/icons/figma.png" },
-      { title: "Agile", porcentage: 75, logo: "/icons/agile.png" },
-      { title: "Trello", porcentage: 75, logo: "/icons/trello.png" },
     ],
     professional: [
       {
@@ -188,113 +155,21 @@ export default {
   },
 
   getters: {
-    getHobbies: (state) => state.hobbies1,
-    getProjects: (state) => state.projects1,
-    getAcademics: (state) => state.academics1,
-    getAcademic: (state) => (logo) => state.academics1.find((c) => c.logo === logo),
-    getOneProject: (state) => (name1) => state.projects1.find((c) => c.name === name1),
-    getProgramming: (state) => state.programming1,
-    getExtra: (state) => state.certificates,
-    getskillsFE: (state) => state.skillsFE,
-    getskillsBE: (state) => state.skillsBE,
-    getothers: (state) => state.others,
+    getHobbies: (state) => state.hobbies,
+    getProjects: (state) => state.projects,
+    getAcademics: (state) => state.academics,
+    getAcademic: (state) => (logo) => state.academics.find((c) => c.logo === logo),
+    getOneProject: (state) => (name1) => state.projects.find((c) => c.name === name1),
+    getCertificates: (state) => state.certificates,
     getProfessional: (state) => state.professional,
     getOneProfessional: (state) => (logo) => state.professional.find((c) => c.logo === logo),
   },
 
   mutations: {
-    SET_HOBBIES(state, payload) {
-      state.hobbies = []
-      state.hobbies.push(payload.hobbies)
-    },
-    SET_PROJECTS(state, payload) {
-      state.projects = []
-      state.projects.push(payload.projects)
-    },
-    SET_ACADEMICS(state, payload) {
-      state.academics = []
-      state.academics.push(payload.academics)
-    },
-    SET_ONE_PROJECT(state, payload) {
-      state.oneProject = []
-      state.oneProject.push(payload.project)
-    },
-    SET_PROGRAMMING(state, payload) {
-      state.programming = []
-      state.programming.push(payload.certificates)
-    },
-    SET_EXTRA(state, payload) {
-      state.extra = []
-      state.extra.push(payload.certificates)
-    },
+
   },
 
   actions: {
-    async loadHobbies(context) {
-      const response = await fetch(`https://luisgomesapi.herokuapp.com/luisg_api/hobbies`, {
-        method: 'GET',
-      })
-      if (response.ok) {
-        context.commit("SET_HOBBIES", await response.json());
-      } else {
-        const err = await response.json()
-        throw new Error(err.error)
-      }
-    },
-    async loadProjects(context) {
-      const response = await fetch(`https://luisgomesapi.herokuapp.com/luisg_api/projects`, {
-        method: 'GET',
-      })
-      if (response.ok) {
-        context.commit("SET_PROJECTS", await response.json());
-      } else {
-        const err = await response.json()
-        throw new Error(err.error)
-      }
-    },
-    async loadAcademics(context) {
-      const response = await fetch(`https://luisgomesapi.herokuapp.com/luisg_api/academics`, {
-        method: 'GET',
-      })
-      if (response.ok) {
-        context.commit("SET_ACADEMICS", await response.json());
-      } else {
-        const err = await response.json()
-        throw new Error(err.error)
-      }
-    },
-    async loadOneProject(context, data) {
-      const response = await fetch(`https://luisgomesapi.herokuapp.com/luisg_api/projects/${data}`, {
-        method: 'GET',
-      })
-      if (response.ok) {
-        context.commit("SET_ONE_PROJECT", await response.json());
-      } else {
-        const err = await response.json()
-        throw new Error(err.error)
-      }
-    },
-    async loadProgrammingCertificates(context) {
-      const response = await fetch(`https://luisgomesapi.herokuapp.com/luisg_api/certificates`, {
-        method: 'GET',
-      })
-      if (response.ok) {
-        context.commit("SET_PROGRAMMING", await response.json());
-      } else {
-        const err = await response.json()
-        throw new Error(err.error)
-      }
-    },
-    async loadExtraCertificates(context) {
-      const response = await fetch(`https://luisgomesapi.herokuapp.com/luisg_api/certificates/extra`, {
-        method: 'GET',
-      })
-      if (response.ok) {
-        context.commit("SET_EXTRA", await response.json());
-      } else {
-        const err = await response.json()
-        throw new Error(err.error)
-      }
-    },
+
   }
 };
