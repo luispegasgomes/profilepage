@@ -38,7 +38,7 @@
               mt-3
             "></div>
               <!--CAR POST-->
-              <div class="postBox m-3" v-for="(info, index) in getHobbies.slice().reverse()" :key="index">
+              <div class="postBox m-3 mt-4 col-10" v-for="(info, index) in getHobbies.slice().reverse()" :key="index">
                 <div class="d-flex align-items-center m-2">
                   <img src="../../assets/icons/location.png" width="20" height="20">
                   <span class="fontBarlow" style="margin-left: 0.2rem; font-size: 15px;">{{ info.title }}</span>

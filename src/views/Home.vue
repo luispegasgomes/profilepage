@@ -1,7 +1,7 @@
 <template>
   <div class="bgBeige">
     <div class="home bgBlue d-flex flex-column align-items-center justify-content-center">
-      <h1 class="fontAsap colorDarkBlue animate-charcter mt-2"
+      <h1 class="fontAsap colorDarkBlue animate-charcter mt-4"
         style="font-weight: bold; font-size: 7vh; text-align: center; height: 12vh" id="luis">
         <span style="color: #faf9f6">I'm</span>
         Luís G<img class="rotateRim" src="../assets/icons/wheel.png" width="32px" />mes
