@@ -6,7 +6,7 @@
       <div class="row justify-content-center">
         <div class="certificateBox mt-4 mb-3 mx-4 d-flex align-items-center justify-content-center"
           v-for="(info, index) in getExtra" :key="index">
-          <img :src="info.logo" width="380" height="250">
+          <img :src="getCertificateImage(info.image)" width="380" height="250">
         </div>
       </div>
       <scrollToTop :collapseName="collapseName" />
@@ -18,6 +18,7 @@
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
 import collapseHeader from "../parts/collapse-header.vue"
+import { getCertificateImage } from "../../helpers/getImgSrc";
 
 export default {
   name: "Certificate",
@@ -39,6 +40,7 @@ export default {
   },
 
   methods: {
+    getCertificateImage,
     closeModal() {
       this.$bvModal.hide("modal-2");
     },

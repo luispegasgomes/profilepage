@@ -13,3 +13,8 @@ export function getInstitutionLogo(name) {
 export function getSkillIcon(text, name, color) {
     return `https://img.shields.io/badge/${text}?style=for-the-badge&logo=${name}&logoColor=${color}`;
 }
+
+
+export function getCertificateImage(name) {
+    return `https://github.com/luispegasgomes/images/blob/main/profilepage/certificates/${name}.png?raw=true`;
+}
