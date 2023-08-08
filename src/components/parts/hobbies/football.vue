@@ -1,7 +1,7 @@
 <template>
-    <div class="d-flex justify-content-center">
+    <div class="row justify-content-center">
         <div class="footballBox m-4 d-flex flex-column bgBlue" v-for="(object, index) in getFootball" :key="index">
-            <div class="d-flex mb-3 mt-3 mx-3">
+            <div class="d-flex mb-3 mt-3 mx-1">
                 <img :src="object.logo" height="50">
                 <div class="d-flex flex-column mx-2">
                     <span style="font-size: 18px; font-weight: bold;" class="fontAsap">{{object.club}}</span>

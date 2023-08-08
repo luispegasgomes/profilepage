@@ -53,42 +53,11 @@ export default {
 </script>
 
 <style scoped>
-.download {
-  border: none;
-  border-radius: 100px;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-}
 
 .certificateBox {
   border: solid 6px #123456;
   background-color: white;
   width: 400px;
   height: 300px;
-}
-
-.closebtn {
-  border: none;
-  border-radius: 5px;
-  background-color: #b20000;
-  height: 30px;
-  width: 60px;
-  color: white;
-}
-
-.backtotop {
-  border: none;
-  border-radius: 11px;
-  background-color: #586F7C;
-  animation: wiggle 1.2s infinite;
-}
-
-.secondaryBtns {
-  border: none;
-  border-radius: 100px;
-  background-color: #102b3f;
-  width: 60px;
-  height: 60px;
 }
 </style>
