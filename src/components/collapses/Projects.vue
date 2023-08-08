@@ -106,6 +106,10 @@ export default {
 </script>
 
 <style scoped>
+
+#collapse-project{
+  background-color: #586F7C;
+}
 .btnShow {
   width: 100px;
   border: none;

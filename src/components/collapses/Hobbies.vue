@@ -61,47 +61,8 @@
             </div>
           </div>
         </div>
-        <div id="soccer" v-if="showFootball">
-          <div class="d-flex align-items-center justify-content-center mt-2">
-            <h1 class="colorDarkBlue mt-3" style="font-size: 30px">Football</h1>
-          </div>
-
-          <div class="
-          mt-4
-          mx-2
-          secondBack2
-          fontBarlow
-          colorDarkBlue
-          d-flex
-          flex-column
-          align-items-start
-          col-12
-        ">
-            <h1 style="font-size: 30px">2018-2019</h1>
-            <hr class="col-5 mt-0 mb-1" style="height: 2px" />
-            <div class="d-flex align-items-center mx-3">
-              <img src="../../assets/gdr.png" width="50" height="50" />
-              <p class="mt-3 mx-3">
-                <span style="font-weight: bold">
-                  Grupo Desportivo de Resende <br />
-                </span>
-                RIGHT BACK
-              </p>
-            </div>
-
-            <h1 class="mt-4" style="font-size: 30px">2016-2017</h1>
-            <hr class="col-5 mt-0 mb-1" style="height: 2px" />
-            <div class="d-flex align-items-center mx-3">
-              <img src="../../assets/fcf.png" width="50" height="50" />
-              <p class="mt-3 mx-3">
-                <span style="font-weight: bold">Futebol Clube de Frende <br />
-                </span>
-                RIGHT BACK
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
+      <Football v-if="showFootball"/>
       <scrollToTop :collapseName="collapseName" />
     </b-card>
   </div>
@@ -111,7 +72,7 @@
 import { mapGetters, mapMutations } from "vuex";
 import scrollToTop from "../parts/scroll-to-top.vue";
 import collapseHeader from "../parts/collapse-header.vue"
-
+import Football from '../parts/hobbies/football.vue';
 export default {
   name: "Hobbies",
 
@@ -127,6 +88,7 @@ export default {
   components: {
     scrollToTop,
     collapseHeader,
+    Football,
   },
 
   computed: {
@@ -151,6 +113,10 @@ export default {
 </script>
 
 <style scoped>
+
+#collapse-hobbie{
+  background-color: #586F7C;
+}
 .secondaryBtns {
   border: none;
   border-radius: 100px;

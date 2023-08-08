@@ -8,6 +8,10 @@ export default {
       { date: "13/01/2023", img: "car/trasbmw.png", title: "Paredes, Porto" },
       { date: "18/02/2023", img: "car/douro.jpg", title: "Douro river, Baião" },
     ],
+    football:[
+      { season: "2018/2019", img: "football/fotojogogdr.png", logo:"football/gdr.png", club: "Grupo Desportivo Resende", position: "RIGHT BACK"},
+      { season: "2016/2017", img: "football/fotojogofcf.jpg", logo:"football/fcf.png", club: "Futebol Clube Frende", position: "RIGHT BACK"},
+    ],
     projects: [
       {
         date: "11/2020 - 01/2021",
@@ -155,6 +159,7 @@ export default {
 
   getters: {
     getHobbies: (state) => state.hobbies,
+    getFootball: (state) => state.football,
     getProjects: (state) => state.projects,
     getAcademics: (state) => state.academics,
     getAcademic: (state) => (logo) => state.academics.find((c) => c.logo === logo),
