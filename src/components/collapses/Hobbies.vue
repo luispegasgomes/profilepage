@@ -22,21 +22,14 @@
           justify-content-center
           mt-3
         " id="cars1" v-if="showCar">
-            <p class="col-10 col-xl-6 mt-3 colorWhite" style="text-align: center">
+            <span class="col-10 col-xl-6 mt-3 colorWhite" style="text-align: center">
               In addition to enjoying programming, one of my passions is also the
               automobile culture, I am a car enthusiast, I really like to drive and
               take good care of my car and I like when someone asks me to take a
               look at their car.
-            </p>
+            </span>
 
-            <div class="cars">
-              <div class="
-              d-flex
-              flex-column
-              align-items-center
-              justify-content-center
-              mt-3
-            "></div>
+            <div class="cars mt-2">
               <!--CAR POST-->
               <div class="postBox m-3 mt-3 col-10" v-for="(info, index) in getHobbies.slice().reverse()" :key="index">
                 <div class="d-flex align-items-center m-2">
@@ -51,7 +44,7 @@
                 justify-content-center
                 mt-2
               ">
-                  <img :src="info.img" width="285" height="200" style="border: solid 2px #102b3f;" />
+                  <img :src="info.img" width="285" height="214" style="border: solid 2px #102b3f;" />
                 </div>
                 <span class="mt-1 fontBarlow" style="float: right; margin-right: 30px;">
                   {{ info.date }}
@@ -136,7 +129,7 @@ export default {
   border: solid 6px #102b3f;
   background-color: #95ADB6;
   width: 360px;
-  height: 285px;
+  height: 295px;
   font-weight: bold;
 }
 
