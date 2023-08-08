@@ -51,11 +51,11 @@
                 justify-content-center
                 mt-2
               ">
-                  <img :src="info.img" width="266" height="200" style="border: solid 2px #102b3f;" />
+                  <img :src="info.img" width="285" height="200" style="border: solid 2px #102b3f;" />
                 </div>
-                <p class="mt-2 mx-3 fontBarlow" style="text-align: end">
+                <span class="mt-1 fontBarlow" style="float: right; margin-right: 30px;">
                   {{ info.date }}
-                </p>
+                </span>
               </div>
               <!--CAR POST-->
             </div>
