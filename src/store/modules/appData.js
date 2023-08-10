@@ -1,12 +1,12 @@
 export default {
   state: {
     hobbies: [
-      { date: "16/02/2020", img: "car/santafe.jpeg", title: "Quinta da Touça" },
-      { date: "14/07/2021", img: "car/driving.jpeg", title: "A4, Campo" },
-      { date: "11/12/2021", img: "car/motorclio.jpeg", title: "Santa Marinha Zêzere" },
-      { date: "06/11/2022", img: "car/clios.png", title: "Santa Marinha Zêzere" },
-      { date: "13/01/2023", img: "car/trasbmw.png", title: "Paredes, Porto" },
       { date: "18/02/2023", img: "car/douro.jpg", title: "Douro river, Baião" },
+      { date: "13/01/2023", img: "car/trasbmw.png", title: "Paredes, Porto" },
+      { date: "06/11/2022", img: "car/clios.png", title: "Santa Marinha Zêzere" },
+      { date: "11/12/2021", img: "car/motorclio.jpeg", title: "Santa Marinha Zêzere" },
+      { date: "14/07/2021", img: "car/driving.jpeg", title: "A4, Campo" },
+      { date: "16/02/2020", img: "car/santafe.jpeg", title: "Quinta da Touça" },
     ],
     football:[
       { season: "2018/2019", img: "football/fotojogogdr.png", logo:"football/gdr.png", club: "Grupo Desportivo Resende", position: "RIGHT BACK"},
@@ -158,8 +158,8 @@ export default {
   },
 
   getters: {
-    getHobbies: (state) => state.hobbies,
-    getFootball: (state) => state.football,
+    getHobbiesCar: (state) => state.hobbies,
+    getHobbiesFootball: (state) => state.football,
     getProjects: (state) => state.projects,
     getAcademics: (state) => state.academics,
     getAcademic: (state) => (logo) => state.academics.find((c) => c.logo === logo),
