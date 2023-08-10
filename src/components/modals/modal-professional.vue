@@ -22,7 +22,7 @@
                     <a class="colorWhite m-3" :href="professionalInfo.poster" target="_blank">Preview Poster</a>
                     <a class="colorWhite m-3" :href="professionalInfo.video" target="_blank">Preview Video</a>
                 </div>
-                <img :src="getIcon('close')" width="10%" @click="hideModal" style="cursor: pointer;">
+                <img src="../../assets/icons/close.png" width="10%" @click="hideModal" style="cursor: pointer;">
             </div>
         </b-modal>
     </div>

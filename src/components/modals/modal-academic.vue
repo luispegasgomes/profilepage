@@ -20,7 +20,7 @@
                     </div>
 
                 </b-card>
-                <img :src="getIcon('close')" width="10%" @click="hideModal" style="cursor: pointer;">
+                <img src="../../assets/icons/close.png" width="10%" @click="hideModal" style="cursor: pointer;">
             </div>
         </b-modal>
     </div>
