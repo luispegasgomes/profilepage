@@ -163,6 +163,7 @@ export default {
     getProjects: (state) => state.projects,
     getAcademics: (state) => state.academics,
     getAcademic: (state) => (logo) => state.academics.find((c) => c.logo === logo),
+    getProject: (state) => (name) => state.projects.find((c) => c.name === name),
     getOneProject: (state) => (name1) => state.projects.find((c) => c.name === name1),
     getCertificates: (state) => state.certificates,
     getProfessional: (state) => state.professional,

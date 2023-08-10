@@ -1,13 +1,12 @@
 <template>
     <div class="modalContentClass">
-        <b-modal id="modal-1" title="Conta-nos o teu dia!" ok-title="Confirmar" hide-header hide-footer>
-
+        <b-modal v-model="show" centered @hidden="onModalHidden" hide-header hide-footer body-bg-variant="dark">
             <div class="d-flex flex-column align-items-center justify-content-between">
-                <h1 class="mb-4 fontAsap colorDarkBlue" style="font-size:30px">{{ projectTitle }}</h1>
+                <h1 class="mb-4 fontAsap colorBlue" style="font-size:30px">{{ projectInfo.name }}</h1>
                 <div class="fontBarlow" style="font-size: 30px">
-                    <img :src="imgmodal" width="300px" />
+                    <img :src="projectInfo.promo" width="300px" />
                 </div>
-                <img src="../../assets/icons/close.png" width="10%" @click="hideModal" style="cursor: pointer;">
+                <img src="../../assets/icons/close.png" width="10%" @click="hideModal" style="cursor: pointer;" class="mt-3">
             </div>
         </b-modal>
     </div>
@@ -22,13 +21,13 @@ export default {
     data() {
         return {
             show: false,
-            academicInfo: {},
+            projectInfo: {},
         };
     },
 
 
     computed: {
-        ...mapGetters(["getAcademic"]),
+        ...mapGetters(["getProject"]),
     },
 
     methods: {
@@ -37,7 +36,7 @@ export default {
         getIcon,
         showModal(value) {
             this.show = true;
-            this.academicInfo = this.getAcademic(value)
+            this.projectInfo = this.getProject(value)
         },
         hideModal() {
             this.show = false;
@@ -51,18 +50,4 @@ export default {
 </script>
 
 <style scoped>
-
-.rule {
-  opacity: 1;
-  height: 2px;
-}
-.cardSkills {
-    background-color: #95ADB6;
-    border: solid 6px #586F7C;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
 </style>
