@@ -5,15 +5,13 @@
       <div>
         <div class="d-flex flex-column align-items-center justify-content-center mt-4">
           <div class="mt-2">
-            <button class="mx-3 changeMenuBtn" v-on:click="showCarFunc()" v-scroll-to="'#cars1'"
-              :class="{ 'menuActive': showCar }">
+            <button class="mx-3 changeMenuBtn" v-on:click="showCarFunc()" :class="{ 'menuActive': showCar }">
               <img src="../../assets/icons/car.png" width="30" height="30" />
             </button>
             <button class="mx-3 changeMenuBtn">
               <img src="../../assets/icons/family.png" width="30" height="30" />
             </button>
-            <button class="mx-3 changeMenuBtn" v-on:click="showFootballFunc()" v-scroll-to="'#football1'"
-              :class="{ 'menuActive': showFootball }">
+            <button class="mx-3 changeMenuBtn" v-on:click="showFootballFunc()" :class="{ 'menuActive': showFootball }">
               <img src="../../assets/icons/football.png" width="30" height="30" />
             </button>
           </div>
@@ -21,11 +19,11 @@
       </div>
 
       <transition name="fade" mode="out-in">
-        <div class="fading-component" :key="showCar" id="cars1">
+        <div class="fading-component" :key="showCar">
           <Cars v-if="showCar" />
         </div>
       </transition>
-      <transition name="fade" mode="out-in" id="football1">
+      <transition name="fade" mode="out-in">
         <div class="fading-component" :key="showFootball">
           <Football v-if="showFootball" />
         </div>
