@@ -1,6 +1,6 @@
 <template>
   <div id="collapse-academic" v-show="getPageOpened === 'academic'">
-    <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4" />
+    <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4 mb-1" />
     <!-- NEW -->
     <div class="academic col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3 mb-3" v-for="(info, index) in getAcademics" :key="index">
       <div class="d-flex align-items-center">
