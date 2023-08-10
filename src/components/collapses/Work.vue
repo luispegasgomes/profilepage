@@ -1,6 +1,6 @@
 <template>
   <div id="collapse-work" v-show="getPageOpened === 'work'">
-    <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4"/>
+    <collapseHeader :collapseName="collapseName" :headerName="headerName" class="mt-4 mb-1"/>
     <div class="work col-10 col-sm-10 col-md-10 col-lg-10 col-xl-8 mt-3 mb-3" v-for="(info, index) in getProfessional"
       :key="index">
       <div class="d-flex align-items-center">
