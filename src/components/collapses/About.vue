@@ -31,11 +31,11 @@
 
           <img src="../../assets/about/book.png" width="50px" class="mt-5" />
           <p class="text mt-3">
-            Technologies and Information Systems for the Web <br />
+            Degree in Technologies and Information Systems for the Web <br />
             ESMAD | Escola Superior de Media Artes e Design
           </p>
           <img src="../../assets/about/casa.png" width="50px" class="mt-5" />
-          <p class="text mt-3">Santa Marinha do Zêzere, Baião</p>
+          <p class="text mt-3">Porto, Portugal</p>
           <img src="../../assets/about/birth.png" width="50px" class="mt-5" />
           <p class="text mt-3">September 15, 2002</p>
 
