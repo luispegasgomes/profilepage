@@ -16,7 +16,9 @@
             </div>
           </div>
           <div class="d-flex flex-column align-items-center">
-            <span style="font-size: 13px; text-align:center">{{ object.description }}</span>
+            <div class="d-flex align-items-center" style="height: 8vh;">
+              <span style="font-size: 13px; text-align:center;">{{ object.description }}</span>
+            </div>
             <span class="colorDarkBlue mt-2" style="font-weight: bold;">Main tools used</span>
 
             <div class="d-flex flex-column align-items-center justify-content-center mt-2 mb-2">
