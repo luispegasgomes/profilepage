@@ -139,6 +139,22 @@ export default {
     ],
     professional: [
       {
+        date: "09-2023 - At the moment",
+        logo: "mog2", subtitle: "MOG Technologies | Media",
+        title: "Junior Software Developer",
+        description: "Actually, i work in front-end development in Media Asset Management software, MAM4PRO.",
+        poster: "",
+        video: "",
+        skills: [
+          { text: 'React-586F7C', name: 'react', color: 'FFFFFF' },
+          { text: 'Redux-593D88', name: 'redux', color: 'FFFFFF' },
+          { text: 'Ractive-00C1CE', name: 'javascript', color: 'white' }, 
+          { text: 'Sass-CC6699', name: 'sass', color: 'white' },
+          { text: 'GitLab-E24329', name: 'gitlab', color: 'white' },
+          { text: 'Figma-F24E1E', name: 'figma', color: 'white' },
+        ],
+      },
+      {
         date: "03-2023 - 07/2023",
         logo: "mog2", subtitle: "MOG Technologies | Curricular Internship",
         title: "Software Developer Trainee",
