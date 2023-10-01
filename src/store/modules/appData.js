@@ -105,6 +105,13 @@ export default {
     ],
     academics: [
       {
+        date: "09/2023 - At the moment",
+        logo: "iseptest",
+        subtitle: "Master's Degree, Software Engineer",
+        title: "Instituto Superior de Engenharia do Porto",
+        average: "None"
+      },
+      {
         date: "10/2020 - 07/2023",
         logo: "esmad2",
         subtitle: "Degree, Technologies and Information Systems for the Web",
