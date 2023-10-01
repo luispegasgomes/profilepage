@@ -7,8 +7,8 @@
         Luís G<img class="rotateRim" src="../assets/icons/wheel.png" width="32px" />mes
       </h1>
       <p class="fontBarlow colorDarkBlue" style="text-align: center; font-size: 3vh; height: 12vh">
-        Software Developer<br />
-        Trainee at MOG Technologies
+        Software Engineer<br />
+         Junior at MOG Technologies
       </p>
       <img src="../assets/luisgomes.jpg" class="mt-4" style="border-radius: 50%; margin-bottom: 5vh" alt="Luis"
         width="220vh" height="220vh" />
