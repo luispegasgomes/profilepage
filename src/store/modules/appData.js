@@ -148,7 +148,7 @@ export default {
       {
         date: "09-2023 - At the moment",
         logo: "mog2", subtitle: "MOG Technologies | Media",
-        title: "Junior Software Developer",
+        title: "Junior Software Engineer",
         description: "Actually, i work in front-end development in Media Asset Management software, MAM4PRO.",
         poster: "",
         video: "",
@@ -163,7 +163,7 @@ export default {
       },
       {
         date: "03-2023 - 07/2023",
-        logo: "mog2", subtitle: "MOG Technologies | Curricular Internship",
+        logo: "mog3", subtitle: "MOG Technologies | Curricular Internship",
         title: "Software Developer Trainee",
         description: "In this curricular internship, I Developed two features to MAM4PRO (Media Asset Management), the Safe Area Overlays and Pop-up Player.",
         poster: "https://github.com/luispegasgomes/images/blob/main/profilepage/workImages/40200283_Lu%C3%ADs_Gomes.jpg?raw=true",
