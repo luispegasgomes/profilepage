@@ -138,6 +138,7 @@ export default {
 
     ],
     certificates: [
+      { date: "12/2023", image: "typescript", subtitle: "TS Course", title: "Udemy" },
       { date: "08/2022", image: "freecodecamp", subtitle: "Graphical presentation utility", title: "Campus Digital" },
       { date: "10/2021", image: "cursoingles", subtitle: "English Course B2.2", title: "Núcleo FCL" },
       { date: "10/2021", image: "codeweek", subtitle: "English Course B2.2", title: "Núcleo FCL" },
